@@ -12,7 +12,7 @@ export type PostParams = {
   slug: string;
 };
 
-const Post = ({
+const Article = ({
   currentPost: {
     title,
     category,
@@ -75,7 +75,7 @@ const Post = ({
   </Page>
 );
 
-export default Post;
+export default Article;
 
 export const getStaticPaths: GetStaticPaths<PostParams> = async () => ({
   paths: (await getAllPosts()).map(({ slug }) => ({ params: { slug } })),
