@@ -31,7 +31,11 @@ const Post = ({
   >
     <Head>
       <meta name="description" content={description} />
-      <meta property="og:url" content={`/${slug}`} key="ogurl" />
+      <meta
+        property="og:url"
+        content={`${SiteMetadata.siteUrl}/${slug}`}
+        key="ogurl"
+      />
       <meta property="og:title" content={title} key="ogtitle" />
       <meta
         property="og:site_name"
@@ -40,6 +44,11 @@ const Post = ({
       />
       <meta property="og:description" content={description} key="ogdesc" />
       <meta property="twitter:card" content="summary" key="twittercard" />
+      <meta
+        property="twitter:creator"
+        content={SiteMetadata.author.name}
+        key="twittercreator"
+      />
       <meta property="twitter:title" content={title} key="twittertitle" />
       <meta
         property="twitter:description"
