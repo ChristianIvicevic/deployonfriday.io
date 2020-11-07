@@ -252,3 +252,7 @@ Furthermore our current frontend isn't about pre-rendered pages and would not be
 Therefore sticking to our classic create-react-app bootstrapped project will suffice.
 
 Who knows what project might benefit from Next.js in the future?
+
+---
+
+If you want to check the full source code, head over to the [overengineered.io repository](https://github.com/ChristianIvicevic/overengineered.io) and start browsing.
