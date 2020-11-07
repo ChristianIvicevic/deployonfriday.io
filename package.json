@@ -50,7 +50,7 @@
     "remark-html": "13.0.1",
     "remark-parse": "9.0.0",
     "remark-rehype": "8.0.0",
-    "sass": "1.28.0",
+    "sass": "1.29.0",
     "shiki": "0.2.6",
     "slugify": "1.4.6",
     "type-fest": "0.18.0",
