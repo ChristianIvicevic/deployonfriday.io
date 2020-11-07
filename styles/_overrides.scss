@@ -1,0 +1,5 @@
+// Remove the default Blueprint margin on controls.
+.#{$ns}-control {
+  line-height: normal;
+  margin-bottom: 0;
+}

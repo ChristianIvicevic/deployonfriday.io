@@ -1,0 +1,63 @@
+{
+  "name": "overengineered.io",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": "Christian Ivicevic <c.ivicevic@reply.de>",
+  "bugs": {
+    "url": "https://github.com/ChristianIvicevic/overengineered.io/issues"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint **/*.{ts,tsx}"
+  },
+  "dependencies": {
+    "@blueprintjs/core": "3.35.0",
+    "@blueprintjs/icons": "3.22.0",
+    "@types/classnames": "2.2.11",
+    "@types/he": "1.1.1",
+    "@types/node": "14.14.6",
+    "@types/parse-numeric-range": "0.0.1",
+    "@types/react": "16.9.55",
+    "@typescript-eslint/eslint-plugin": "4.6.1",
+    "@typescript-eslint/parser": "4.6.1",
+    "classnames": "2.2.6",
+    "date-fns": "2.16.1",
+    "eslint": "7.12.1",
+    "eslint-config-airbnb-typescript": "12.0.0",
+    "eslint-config-prettier": "6.15.0",
+    "eslint-import-resolver-typescript": "2.3.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "fontsource-merriweather": "3.0.9",
+    "fontsource-montserrat": "3.0.9",
+    "gray-matter": "4.0.2",
+    "he": "1.2.0",
+    "next": "10.0.1",
+    "normalize.css": "8.0.1",
+    "parse-numeric-range": "1.2.0",
+    "prettier": "2.1.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "reading-time": "1.2.0",
+    "rehype-stringify": "8.0.0",
+    "remark-gfm": "1.0.0",
+    "remark-html": "13.0.1",
+    "remark-parse": "9.0.0",
+    "remark-rehype": "8.0.0",
+    "sass": "1.28.0",
+    "shiki": "0.2.6",
+    "slugify": "1.4.6",
+    "type-fest": "0.18.0",
+    "typescript": "4.0.5",
+    "unified": "9.2.0"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}

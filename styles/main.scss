@@ -1,0 +1,241 @@
+@import '~normalize.css/normalize.css';
+@import '~@blueprintjs/core/lib/scss/variables';
+@import '~@blueprintjs/core/lib/css/blueprint.css';
+@import '~@blueprintjs/icons/lib/css/blueprint-icons.css';
+
+@import './typography';
+@import './global';
+@import './overrides';
+
+// Syntax Highlighting
+.shiki-highlight {
+  border-radius: 10px;
+  margin-bottom: 1.75rem;
+  margin-left: -1.3125rem;
+  margin-right: -1.3125rem;
+  overflow: auto;
+
+  // This is a fix for the One Dark Pro punctuation that appears black
+  // unfortunately.
+  span[style='color: #000000'] {
+    color: #abb2bf !important;
+  }
+}
+
+@media (max-width: 672px) {
+  .shiki-highlight {
+    border-radius: 0;
+  }
+}
+
+.shiki-highlight-line {
+  background-color: #022a4b;
+  border-left: 0.25em solid $blue4;
+  display: block;
+  margin-left: -1.3125rem;
+  margin-right: -1.3125rem;
+  padding-left: 1.25em;
+  padding-right: 1em;
+}
+
+.app {
+  background: var(--bg);
+  color: var(--textNormal);
+  min-height: 100vh;
+  transition: color 0.2s ease-out 0s, background 0.2s ease-out 0s;
+
+  &--light {
+    --bg: #fff;
+    --bg-secondary: #f9fafb; // unused (yet)
+    --blue: #{$blue4};
+    --header: var(--blue); // unused (yet)
+    --textNormal: #222;
+    --textTitle: #222;
+    --textLink: var(--blue);
+    --hr: rgba(0, 0, 0, 0.2);
+    --inlineCode-bg: rgba(255, 229, 100, 0.2);
+    --inlineCode-text: #1a1a1a;
+    --form-shadow: 0 2px 15px 0 rgba(210, 214, 220, 0.5); // unused (yet)
+  }
+
+  &--dark {
+    -webkit-font-smoothing: antialiased;
+    --bg: #282c35;
+    --bg-secondary: #363c48; // unused (yet)
+    --blue: #{$blue5};
+    --header: #fff; // unused (yet)
+    --textNormal: hsla(0, 0%, 100%, 0.88);
+    --textTitle: #fff;
+    --textLink: var(--blue);
+    --hr: hsla(0, 0%, 100%, 0.2);
+    --inlineCode-bg: rgba(115, 124, 153, 0.2);
+    --inlineCode-text: #e6e6e6;
+    --form-shadow: 0 2px 15px 0 rgba(26, 26, 26, 0.65); // unused (yet)
+  }
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 42rem;
+  padding: 2.5rem 1.5rem;
+
+  &__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+  }
+
+  &__title {
+    font-family: $fontMontserrat;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 2.625rem;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    & > a {
+      box-shadow: none;
+      color: var(--textTitle) !important;
+      text-decoration: none;
+
+      &:hover {
+        box-shadow: none;
+        text-decoration: none;
+      }
+    }
+
+    &--small {
+      font-size: 1.5rem;
+
+      & > a {
+        box-shadow: none;
+        color: var(--textLink) !important;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 4rem;
+  }
+}
+
+.profile {
+  align-items: center;
+  display: flex;
+  margin-bottom: 3.5rem;
+
+  &__image {
+    border-radius: 50%;
+    height: 3rem;
+    margin-right: 1rem;
+    width: 3rem;
+  }
+
+  &__description {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+.post {
+  &__category {
+    display: table;
+    margin-top: 3.5rem;
+
+    &#{&}--java {
+      background: $orange3;
+      color: $white;
+    }
+
+    &#{&}--javascript {
+      background: $gold5;
+      color: $dark-gray1;
+    }
+
+    &#{&}--react {
+      background: #61dafb;
+      color: $dark-gray1;
+    }
+
+    &#{&}--software-craft {
+      background: $violet3;
+      color: $white;
+    }
+
+    &#{&}--spring-boot {
+      background: $green3;
+      color: $white;
+    }
+
+    &#{&}--typescript {
+      background: $blue3;
+      color: $white;
+    }
+  }
+
+  &__title {
+    font-family: $fontMontserrat;
+    font-size: 1.75rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+
+    & > a {
+      box-shadow: none;
+      color: var(--textLink) !important;
+      text-decoration: none;
+
+      &:hover {
+        box-shadow: none;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.article {
+  &__title {
+    color: var(--textTitle);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  &__details {
+    display: block;
+    margin-bottom: 1.75rem;
+    margin-top: -1.25rem;
+  }
+
+  &__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1.75rem;
+  }
+
+  &__nav-link {
+    margin-bottom: 1rem;
+  }
+
+  &__nav-anchor {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-icon {
+    margin-right: 0.5rem;
+
+    &--next {
+      margin-left: 0.5rem;
+      margin-right: 0;
+    }
+  }
+
+  &__content {
+    margin-bottom: 4rem;
+  }
+}
