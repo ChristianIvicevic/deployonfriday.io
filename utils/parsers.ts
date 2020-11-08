@@ -1,6 +1,7 @@
 import { decode } from 'he';
 import parseNumericRange from 'parse-numeric-range';
 import rehypeStringify from 'rehype-stringify';
+import remarkExternalLinks from 'remark-external-links';
 import remarkGfm from 'remark-gfm';
 import remarkParse from 'remark-parse';
 import remark2rehype from 'remark-rehype';
@@ -15,6 +16,7 @@ export const markdownToHtml = async (markdownContent: string) => {
     await unified()
       .use(remarkParse)
       .use(remarkGfm)
+      .use(remarkExternalLinks)
       .use(remark2rehype)
       .use(rehypeStringify)
       .process(markdownContent)
