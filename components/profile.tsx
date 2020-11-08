@@ -12,7 +12,7 @@ export const Profile = () => (
       <a
         href={SiteMetadata.author.url}
         target="_blank"
-        rel="noopener noreferrer"
+        rel="nofollow noopener noreferrer"
       >
         {SiteMetadata.author.name}
       </a>
