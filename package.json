@@ -45,6 +45,8 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "reading-time": "1.2.0",
+    "rehype-autolink-headings": "4.0.0",
+    "rehype-slug": "3.0.0",
     "rehype-stringify": "8.0.0",
     "remark-external-links": "8.0.0",
     "remark-gfm": "1.0.0",

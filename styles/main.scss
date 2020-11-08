@@ -7,7 +7,12 @@
 @import './global';
 @import './overrides';
 
-// Syntax Highlighting
+.anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+}
+
 .shiki-highlight {
   border-radius: 10px;
   margin-bottom: 1.75rem;

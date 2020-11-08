@@ -17,6 +17,10 @@ a {
     box-shadow: none;
     text-decoration: none;
   }
+
+  &.anchor {
+    box-shadow: none;
+  }
 }
 
 h1 {
@@ -33,6 +37,16 @@ h4,
 h5,
 h6 {
   margin-top: 3.5rem;
+
+  .anchor span {
+    visibility: hidden;
+  }
+
+  &:hover {
+    .anchor span {
+      visibility: visible;
+    }
+  }
 }
 
 blockquote {
