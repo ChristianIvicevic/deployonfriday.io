@@ -12,15 +12,7 @@ export type PostParams = {
 };
 
 const Article = ({
-  currentPost: {
-    title,
-    category,
-    date,
-    readingTime,
-    htmlContent,
-    description,
-    slug,
-  },
+  currentPost: { title, category, date, readingTime, htmlContent, description },
   previousLink,
   nextLink,
 }: InferGetStaticPropsType<typeof getStaticProps>) => (
@@ -28,7 +20,7 @@ const Article = ({
     footer={<ArticleFooter previousLink={previousLink} nextLink={nextLink} />}
     title={title}
   >
-    <Seo description={description} title={title} url={slug} />
+    <Seo description={description} title={title} />
     <article className="article">
       <header>
         <PostCategory category={category} />
