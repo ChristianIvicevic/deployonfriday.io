@@ -3,7 +3,7 @@ title: I have tried out Next.js to build my personal blog so you don't have to
 description: >-
   Rather than sticking with the popular Gatsby framework I wanted to learn something new.
   Therefore I decided to use Next.js to build my personal blog and this is about sharing my new knowledge.
-date: 2020-11-08
+date: 2020-11-10
 category: React
 ---
 
@@ -104,18 +104,16 @@ This is the first time Next.js introduces us to mixing code that is only availab
 
 The index page of my blog looks like this:
 
-```tsx{7,28-32}
+```tsx{7,26-30}
 import { Page } from 'components/page';
 import { Post } from 'components/post';
+import { Seo } from 'components/seo';
 import { getAllPosts } from 'lib/posts';
 import { InferGetStaticPropsType } from 'next';
-import Head from 'next/head';
 
 const Index = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => (
   <Page index>
-    <Head>
-      {/* SEO and other meta elements injected into the head */}
-    </Head>
+    <Seo />
     {posts.map(({ date, slug, title, description, category, readingTime }) => (
       <Post
         key={slug}
@@ -223,7 +221,7 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
 ```
 
 Requesting `/api/name` from within the frontend, for instance in a `getServerSideProps` method or as the handler of an event, will invoke the lambda and return the object `{ name: 'John Doe' }` with status code 200.
-A possible use case is the registration for a newsletter or a authentication for users.
+A possible use case is the registration for a newsletter or an authentication for users.
 
 This feature is awesome as it allows you to write some backend code without having to create an entire backend yourself.
 
@@ -237,7 +235,8 @@ They provide an automated CI/CD integration via the respective Github applicatio
 Temporary deployments for incoming merge requests are created automatically to be able to preview changes right away.
 And the best is that it is completely free for hobby purposes and thus cheaper than any other hosting service, especially DigitalOcean and AWS, could be for small pet projects.
 
-With regards to AWS it seems as if Next.js applications cannot run with usual S3 buckets in combination witt lambdas in the free tier as they require Lambda@Edge which is on the pricier side. Unfortunately I have no experience with such a deployment to AWS yet as Vercel has been sufficient thus far.
+With regards to AWS it seems as if Next.js applications cannot run with usual S3 buckets in combination with lambdas in the free tier as they require Lambda@Edge which is on the pricier side.
+Unfortunately I have no experience with such a deployment to AWS yet as Vercel has been sufficient thus far.
 
 ## Conclusion
 
@@ -255,4 +254,4 @@ Who knows what project might benefit from Next.js in the future?
 
 ---
 
-If you want to check the full source code, head over to the [overengineered.io repository](https://github.com/ChristianIvicevic/overengineered.io) and start browsing.
+If you want to check the full source code, head over to the [deployonfriday.io repository](https://github.com/ChristianIvicevic/deployonfriday.io) and start browsing.
