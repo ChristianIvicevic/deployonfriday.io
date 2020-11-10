@@ -2,7 +2,7 @@ import { Page } from 'components/page';
 import { Post } from 'components/post';
 import { Seo } from 'components/seo';
 import { getAllPosts } from 'lib/posts';
-import { InferGetStaticPropsType } from 'next';
+import type { InferGetStaticPropsType } from 'next';
 
 const Index = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => (
   <Page index>
