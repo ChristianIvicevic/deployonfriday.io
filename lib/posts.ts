@@ -23,30 +23,32 @@ type FrontMatterData = {
 export const getAllPosts = async () =>
   (
     await Promise.all(
-      readdirSyncRecursive(POSTS_DIRECTORY).map(async fileName => {
-        const fileContents = fs.readFileSync(fileName, 'utf-8');
+      readdirSyncRecursive(POSTS_DIRECTORY)
+        .filter(fileName => fileName.endsWith('.md'))
+        .map(async fileName => {
+          const fileContents = fs.readFileSync(fileName, 'utf-8');
 
-        const frontMatter = matter(fileContents);
-        const {
-          category,
-          date,
-          description,
-          title,
-        } = frontMatter.data as FrontMatterData;
+          const frontMatter = matter(fileContents);
+          const {
+            category,
+            date,
+            description,
+            title,
+          } = frontMatter.data as FrontMatterData;
 
-        return {
-          date: format(parseJSON(date), 'LLLL d, yyyy'),
-          title,
-          description,
-          category,
-          slug: slugify(title, { strict: true, lower: true }),
-          readingTime: Math.ceil(
-            readingTime(frontMatter.content, {
-              wordsPerMinute: WORDS_PER_MINUTE_SPEED,
-            }).minutes,
-          ),
-          htmlContent: await markdownToHtml(frontMatter.content),
-        };
-      }),
+          return {
+            date: format(parseJSON(date), 'LLLL d, yyyy'),
+            title,
+            description,
+            category,
+            slug: slugify(title, { strict: true, lower: true }),
+            readingTime: Math.ceil(
+              readingTime(frontMatter.content, {
+                wordsPerMinute: WORDS_PER_MINUTE_SPEED,
+              }).minutes,
+            ),
+            htmlContent: await markdownToHtml(frontMatter.content),
+          };
+        }),
     )
   ).sort((a, b) => b.date.localeCompare(a.date));
