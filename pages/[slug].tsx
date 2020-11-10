@@ -4,8 +4,12 @@ import { PostCategory } from 'components/post-category';
 import { PostDetails } from 'components/post-details';
 import { Seo } from 'components/seo';
 import { getAllPosts } from 'lib/posts';
-import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
-import { PromiseValue } from 'type-fest';
+import type {
+  GetStaticPaths,
+  GetStaticProps,
+  InferGetStaticPropsType,
+} from 'next';
+import type { PromiseValue } from 'type-fest';
 
 export type PostParams = {
   slug: string;

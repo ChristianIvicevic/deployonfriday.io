@@ -5,7 +5,7 @@ import { ThemeSwitch } from 'components/theme-switch';
 import { SiteMetadata } from 'constants/site-metadata';
 import Head from 'next/head';
 import Link from 'next/link';
-import { FC, ReactNode } from 'react';
+import type { FC, ReactNode } from 'react';
 
 type Props = {
   index?: boolean;
