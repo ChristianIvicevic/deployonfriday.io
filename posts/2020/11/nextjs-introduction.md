@@ -227,7 +227,7 @@ By doing so the application will be a hybrid and expose those endpoints via `/ap
 Assume you have the following lambda located as `pages/api/user/name.ts`:
 
 ```tsx
-import { NextApiRequest, NextApiResponse } from 'next'
+import type { NextApiRequest, NextApiResponse } from 'next';
 
 export default (req: NextApiRequest, res: NextApiResponse) => {
   res.status(200).json({ name: 'John Doe' });
