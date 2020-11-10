@@ -1,7 +1,7 @@
-name: eslint
+name: Code Validation
 on: push
 jobs:
-  lint:
+  eslint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

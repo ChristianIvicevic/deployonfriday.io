@@ -1,6 +1,6 @@
 export const SiteMetadata = {
-  title: 'Overengineered',
-  siteUrl: 'https://overengineered-io.vercel.app',
+  title: 'Deploy On Friday',
+  siteUrl: 'https://deployonfriday.vercel.app',
   author: {
     name: 'Christian Ivicevic',
     summary: 'I code, teach, verify and polarize.',

@@ -1,11 +1,11 @@
 {
-  "name": "overengineered.io",
+  "name": "deployonfriday.io",
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
   "author": "Christian Ivicevic <c.ivicevic@reply.de>",
   "bugs": {
-    "url": "https://github.com/ChristianIvicevic/overengineered.io/issues"
+    "url": "https://github.com/ChristianIvicevic/deployonfriday.io/issues"
   },
   "scripts": {
     "dev": "next dev",
