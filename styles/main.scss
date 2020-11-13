@@ -19,12 +19,6 @@
   margin-left: -1.3125rem;
   margin-right: -1.3125rem;
   overflow: auto;
-
-  // This is a fix for the One Dark Pro punctuation that appears black
-  // unfortunately.
-  span[style='color: #000000'] {
-    color: #abb2bf !important;
-  }
 }
 
 @media (max-width: 672px) {
