@@ -6234,29 +6234,29 @@ shell-quote@1.7.2:
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
   integrity sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
 
-shiki-languages@^0.2.6:
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/shiki-languages/-/shiki-languages-0.2.6.tgz#4525241c8f41eb783485148b3761d41b3e4f72f3"
-  integrity sha512-k2p+bYTdQbbJZoWeJwOBY3hs4OC5A5wCP+/M8Ksovk1L30HyBpGsn/C2soGy+xKCjU/rm3ofaGyCSttfP3Ztjw==
+shiki-languages@^0.2.7:
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/shiki-languages/-/shiki-languages-0.2.7.tgz#7230b675b96d37a36ac1bf995525375ce69f3924"
+  integrity sha512-REmakh7pn2jCn9GDMRSK36oDgqhh+rSvJPo77sdWTOmk44C5b0XlYPwJZcFOMJWUZJE0c7FCbKclw4FLwUKLRw==
   dependencies:
     vscode-textmate "^5.2.0"
 
-shiki-themes@^0.2.6:
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/shiki-themes/-/shiki-themes-0.2.6.tgz#4d271187c9ce3823d7cc8256d8f998d6c936f462"
-  integrity sha512-566UwtYR29zTBEQKbN9v10y+PVSmCsvosoiBoloNBLnTXi1bI7ZjDH+TKkc0+9n9QvJ3kj3IUvmvXL6six1Rhg==
+shiki-themes@^0.2.7:
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/shiki-themes/-/shiki-themes-0.2.7.tgz#6e04451d832152e0fc969876a7bd926b3963c1f2"
+  integrity sha512-ZMmboDYw5+SEpugM8KGUq3tkZ0vXg+k60XX6NngDK7gc1Sv6YLUlanpvG3evm57uKJvfXsky/S5MzSOTtYKLjA==
   dependencies:
     json5 "^2.1.0"
     vscode-textmate "^5.2.0"
 
-shiki@0.2.6:
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/shiki/-/shiki-0.2.6.tgz#e766702ea6ec20b5ab37c7fcb54d927fc71231ce"
-  integrity sha512-QGpzkZN59bingo/h4uJ85gh3QWBZEU7ZB1xFaq4eh2UZUWpOReo3V/7ouVvsZ07E9vblixCyDSrtdyVpg6IZLQ==
+shiki@0.2.7:
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/shiki/-/shiki-0.2.7.tgz#d2547548ed8742673730e1e4bbe792a77c445540"
+  integrity sha512-bwVc7cdtYYHEO9O+XJ8aNOskKRfaQd5Y4ovLRfbQkmiLSUaR+bdlssbZUUhbQ0JAFMYcTcJ5tjG5KtnufttDHQ==
   dependencies:
     onigasm "^2.2.5"
-    shiki-languages "^0.2.6"
-    shiki-themes "^0.2.6"
+    shiki-languages "^0.2.7"
+    shiki-themes "^0.2.7"
     vscode-textmate "^5.2.0"
 
 side-channel@^1.0.2:
