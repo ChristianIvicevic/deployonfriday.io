@@ -9,8 +9,8 @@
 
 .anchor {
   float: left;
-  padding-right: 4px;
   margin-left: -20px;
+  padding-right: 4px;
 }
 
 .shiki-highlight {
@@ -221,8 +221,8 @@
   }
 
   &__nav-anchor {
-    display: flex;
     align-items: center;
+    display: flex;
   }
 
   &__nav-icon {
@@ -236,5 +236,11 @@
 
   &__content {
     margin-bottom: 4rem;
+  }
+
+  &__feedback {
+    display: flex;
+    font-size: 90%;
+    justify-content: center;
   }
 }

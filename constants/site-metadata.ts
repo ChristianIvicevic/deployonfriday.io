@@ -6,6 +6,8 @@ export const SiteMetadata = {
     summary: 'I code, teach, verify and polarize.',
     url: 'https://github.com/ChristianIvicevic',
   },
+  feedbackLink:
+    'https://github.com/ChristianIvicevic/deployonfriday.io/issues/new',
   social: [
     {
       title: 'github',
