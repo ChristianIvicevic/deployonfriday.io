@@ -36,7 +36,7 @@ Sites that have been statically generated don't require an actual backend server
 Eventually statically generated sites improve the user experience significantly with the information being much faster at their disposal.
 
 A remarkable feature that surprised me is the capability of running a hybrid application, i.e. mixing static site generation and server-side rendering in the same project.
-Thus you can pre-render a set of static pages, e.g. an index page or an FAQ page, in advance while serving other pages dynamically using server-side rendering, e.g. products in e-commerce platform with current prices and data.
+Thus you can pre-render a set of static pages, e.g. an index page or a FAQ page, in advance while serving other pages dynamically using server-side rendering, e.g. products in e-commerce platforms with current prices and data.
 
 ## Comparing Gatsby and Next.js based on personal experience
 
