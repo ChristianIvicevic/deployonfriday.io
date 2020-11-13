@@ -2,7 +2,7 @@
 title: I have tried out Next.js to build my personal blog so you don't have to
 description: >-
   Rather than sticking with the popular Gatsby framework I wanted to learn something new.
-  Therefore I decided to use Next.js to build my personal blog and this is about sharing my new knowledge.
+  Therefore I decided to use Next.js to build my personal blog and share my new knowledge.
 date: 2020-11-10
 category: React
 ---
@@ -20,14 +20,13 @@ In this post I want to tell you about the basics and core concepts of Next.js an
 
 > Next.js extends with React with server-side rendering and static site generation capabilities as well as offering features such as internationalization, analytics and even serverless lambdas out-of-the-box.
 
-Next.js is a zero-config framework built on top of React with added convenience features by convention.
-This is unlike any project that has just been bootstrapped using create-react-app or manually setup with Babel, Webpack etc.
+Next.js is a zero-config framework built on top of React with added convenience features by convention that newly bootstrapped projects using create-react-app don't provide right away.
 In comparison to other frameworks such as Angular or Vue the difference is that React is merely a UI library that allows developers to define reusable components, compose and render them.
 For other features, such as routing, animations, internationalization or global state-management it is necessary to install and configure additional dependencies based on the needs of the project.
 Any actual framework delivers some or most of these features out-of-the-box based on certain coding conventions and Next.js is no exception to that.
 
 One of the primary features that Next.js has become popular for is server-side rendering.
-A technique that was very common with PHP before Javascript and the concept of single-page applications has gained traction.
+A technique that was very common before the concept of single-page applications has gained traction.
 Nowadays it is more common to visit websites that perform most of their workload on the client rather than the server itself.
 Server-side rendering however is crucial when you want to perform search engine optimization, one of the reasons it is often preferred for certain applications that have dynamic content that has to be indexed properly.
 
@@ -36,7 +35,8 @@ The benefit of this technique for static content is that it can be served at hig
 Sites that have been statically generated don't require an actual backend server and the client usually just renders the content right away without the need to query further data.
 Eventually statically generated sites improve the user experience significantly with the information being much faster at their disposal.
 
-A remarkable feature that surprised me is the capability of running a hybrid between pre-rendered pages at build-time or request time in the very same project.
+A remarkable feature that surprised me is the capability of running a hybrid application, i.e. mixing static site generation and server-side rendering in the same project.
+Thus you can pre-render a set of static pages, e.g. an index page or an FAQ page, in advance while serving other pages dynamically using server-side rendering, e.g. products in e-commerce platform with current prices and data.
 
 ## Comparing Gatsby and Next.js based on personal experience
 
