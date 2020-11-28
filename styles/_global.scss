@@ -47,6 +47,10 @@ h6 {
       visibility: visible;
     }
   }
+
+  > code {
+    font-size: inherit;
+  }
 }
 
 blockquote {
