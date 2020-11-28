@@ -21,7 +21,7 @@ export const ArticleFooter = ({
     <nav className="article__footer">
       {previousLink ? (
         <div className="article__nav-link">
-          <Link href={previousLink.slug}>
+          <Link href={`/${previousLink.slug}`}>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className="article__nav-anchor">
               <Icon icon="arrow-left" className="article__nav-icon" />
@@ -37,7 +37,7 @@ export const ArticleFooter = ({
       )}
       {nextLink && (
         <div className="article__nav-link">
-          <Link href={nextLink.slug}>
+          <Link href={`/${nextLink.slug}`}>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a className="article__nav-anchor">
               {nextLink.title}
