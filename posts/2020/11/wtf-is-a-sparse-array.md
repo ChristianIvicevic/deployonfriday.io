@@ -11,12 +11,16 @@ Either to call a function multiple times or in the context of React to render th
 Such iterations are usually described imperatively using `for` loops in Javascript:
 
 ```tsx
-for (let i = 0; i < 5; i++) {
-  // ...
-}
+const List = ({ listItems }) => {
+  const children = [];
+  for (const listItem in listItems) {
+    children.push(<li>{listItem}</li>);
+  }
+  return <ul>{children}</ul>;
+};
 ```
 
-Personally I feel this snippet is way to verbose, especially compared to iterations over collections to create respective React components as follows:
+Personally I feel this snippet is way to verbose and not idiomatic, especially compared to iterations over collections with JSX to create respective React components as follows:
 
 ```tsx
 const List = ({ listItems }) => (
@@ -61,7 +65,7 @@ Array(5).map((_, index) => 2 * index);
 
 What's that? 😱
 
-Unexpectedly we get the same empty array as a result.
+Surprisingly we get the same empty array as a result.
 The reason is although our array has a definitive `length` of 5, it is completely *empty*, so it has no elements at all, not even `undefined` or `null`.
 This means that the elements of an array aren't initialized when creating the array itself preserving memory and reducing the time it takes to allocate such an array.
 
@@ -93,7 +97,7 @@ In contrast to our previous examples, explicitly defining a dense array yields t
 // -> [0, 2, 4, 6, 8]
 ```
 
-You may rightfully say that this is not dynamic at all and prone to mistakes so there are a few way to create dense arrays in Javascript depending on the use case.
+You may rightfully say that this is not dynamic at all and prone to mistakes so there are a few ways to create dense arrays in Javascript depending on the use case.
 In order to create an array with fixed length that contains the same element multiple times you can use the [`Array.fill`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill) method:
 
 ```tsx
@@ -115,7 +119,7 @@ Ultimately if you want a range of numbers from 0 to a fixed upper bound, you can
 // -> [0, 1, 2, 3, 4]
 ```
 
-Personally I like to use the last snippet for a more customizable `range` function unless the project I am currently working already has included [`rambda`](https://ramdajs.com/) which provides its own [`range`](https://ramdajs.com/docs/#range) method out of the box.
+Personally I like to use the last snippet for a more customizable `range` function unless the project I am currently working on already has included [`rambda`](https://ramdajs.com/) which provides its own [`range`](https://ramdajs.com/docs/#range) method out of the box.
 
 ```tsx
 const range = (size: number, startAt = 0) =>
