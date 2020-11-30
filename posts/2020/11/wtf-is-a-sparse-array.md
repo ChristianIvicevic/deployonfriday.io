@@ -20,7 +20,7 @@ const List = ({ listItems }) => {
 };
 ```
 
-Personally I feel this snippet is way to verbose and not idiomatic, especially compared to iterations over collections with JSX to create respective React components as follows:
+Personally I feel this snippet is way too verbose and not idiomatic, especially compared to iterations over collections with JSX to create respective React components as follows:
 
 ```tsx
 const List = ({ listItems }) => (
