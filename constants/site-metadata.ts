@@ -7,7 +7,7 @@ export const SiteMetadata = {
     url: 'https://github.com/ChristianIvicevic',
   },
   feedbackLink:
-    'https://github.com/ChristianIvicevic/deployonfriday.io/issues/new',
+    'https://github.com/ChristianIvicevic/deployonfriday.io/discussions',
   social: [
     {
       title: 'github',
