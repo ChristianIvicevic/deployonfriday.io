@@ -2428,10 +2428,10 @@ fontsource-merriweather@4.0.0:
   resolved "https://registry.yarnpkg.com/fontsource-merriweather/-/fontsource-merriweather-4.0.0.tgz#1d38d6c94ea4d152d49948127ddf7db6d05fbab1"
   integrity sha512-1LnYjXYHZm0GNAMSqRJ84O8MHMT6wNywjt8JY0j0lyuvjPLSMRr7mrt4uqWbOnpPF8GnsKS0bYGY6LAidTfH9w==
 
-fontsource-pt-sans@3.1.5:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/fontsource-pt-sans/-/fontsource-pt-sans-3.1.5.tgz#b4e82f3dcc40a4131852dd760243d2ba198d0a08"
-  integrity sha512-X7DQ0LCnOQJ28qptSiUWpgQcTdEAtgEuxHGU93MH0D9/eY9EDwg4/r4DgZmBMVnyDnu2wzagCthvmTy05rRj7w==
+fontsource-pt-sans@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/fontsource-pt-sans/-/fontsource-pt-sans-4.0.0.tgz#864face27b636635087a0a085f9afd2814ee509c"
+  integrity sha512-oNdS6HRrhF6rIXahqhxA8p71tzd402iZZqk8rc8AZmuaZZji23vUCgZZc7Rimljqmcwfry5gRsObs4B0PetBKw==
 
 for-in@^1.0.2:
   version "1.0.2"
