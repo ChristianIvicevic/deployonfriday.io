@@ -1,15 +1,16 @@
 import { SiteMetadata } from 'constants/site-metadata';
 import Head from 'next/head';
+import type { FC } from 'react';
 
 type Props = {
-  description?: string;
-  title?: string;
+  readonly description?: string;
+  readonly title?: string;
 };
 
-export const Seo = ({
+export const Seo: FC<Props> = ({
   description = `Personal blog by ${SiteMetadata.author.name}. ${SiteMetadata.author.summary}`,
   title = SiteMetadata.title,
-}: Props) => {
+}) => {
   const url =
     SiteMetadata.siteUrl +
     (typeof window !== 'undefined' ? window.location.pathname : '');

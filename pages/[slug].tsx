@@ -1,7 +1,8 @@
-import { ArticleFooter, ArticleFooterProps } from 'components/article-footer';
+import type { ArticleFooterProps } from 'components/article-footer';
+import { ArticleFooter } from 'components/article-footer';
+import { Category } from 'components/category';
+import { Details } from 'components/details';
 import { Page } from 'components/page';
-import { PostCategory } from 'components/post-category';
-import { PostDetails } from 'components/post-details';
 import { Seo } from 'components/seo';
 import { getAllPosts } from 'lib/posts';
 import type {
@@ -9,34 +10,31 @@ import type {
   GetStaticProps,
   InferGetStaticPropsType,
 } from 'next';
+import type { FC } from 'react';
+import styled from 'styled-components';
 import type { PromiseValue } from 'type-fest';
 
 export type PostParams = {
-  slug: string;
+  readonly slug: string;
 };
 
-const Article = ({
+const ArticlePage: FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   currentPost: { title, category, date, readingTime, htmlContent, description },
   previousLink,
   nextLink,
-}: InferGetStaticPropsType<typeof getStaticProps>) => (
+}) => (
   <Page
     footer={<ArticleFooter previousLink={previousLink} nextLink={nextLink} />}
     title={title}
   >
     <Seo description={description} title={title} />
-    <article className="article">
+    <article>
       <header>
-        <PostCategory category={category} />
-        <h1 className="article__title">{title}</h1>
-        <PostDetails
-          date={date}
-          readingTime={readingTime}
-          className="article__details"
-        />
+        <Category category={category} />
+        <Title>{title}</Title>
+        <Details date={date} readingTime={readingTime} hasArtificialMargin />
       </header>
-      <div
-        className="article__content"
+      <Content
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: htmlContent }}
       />
@@ -44,7 +42,7 @@ const Article = ({
   </Page>
 );
 
-export default Article;
+export default ArticlePage;
 
 export const getStaticPaths: GetStaticPaths<PostParams> = async () => ({
   paths: (await getAllPosts()).map(({ slug }) => ({ params: { slug } })),
@@ -85,3 +83,14 @@ export const getStaticProps: GetStaticProps<
     },
   };
 };
+
+const Title = styled.h1`
+  color: var(--textTitle);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+`;
+
+const Content = styled.div`
+  margin-bottom: 4rem;
+`;

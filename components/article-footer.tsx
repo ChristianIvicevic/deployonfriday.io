@@ -1,34 +1,34 @@
 import { Icon } from '@blueprintjs/core';
-import classNames from 'classnames';
 import { SiteMetadata } from 'constants/site-metadata';
 import Link from 'next/link';
+import type { FC } from 'react';
+import styled, { css } from 'styled-components';
 
 export type PostFooterLink = {
-  slug: string;
-  title: string;
+  readonly slug: string;
+  readonly title: string;
 };
 
 export type ArticleFooterProps = {
-  previousLink?: PostFooterLink;
-  nextLink?: PostFooterLink;
+  readonly previousLink?: PostFooterLink;
+  readonly nextLink?: PostFooterLink;
 };
 
-export const ArticleFooter = ({
+export const ArticleFooter: FC<ArticleFooterProps> = ({
   previousLink,
   nextLink,
-}: ArticleFooterProps) => (
+}) => (
   <>
-    <nav className="article__footer">
+    <Footer>
       {previousLink ? (
-        <div className="article__nav-link">
+        <LinkWrapper>
           <Link href={`/${previousLink.slug}`}>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a className="article__nav-anchor">
-              <Icon icon="arrow-left" className="article__nav-icon" />
+            <Anchor>
+              <NavigationIcon icon="arrow-left" />
               {previousLink.title}
-            </a>
+            </Anchor>
           </Link>
-        </div>
+        </LinkWrapper>
       ) : (
         <>
           {/* We need this empty div in case we're at the first post. */}
@@ -36,25 +36,18 @@ export const ArticleFooter = ({
         </>
       )}
       {nextLink && (
-        <div className="article__nav-link">
+        <LinkWrapper>
           <Link href={`/${nextLink.slug}`}>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a className="article__nav-anchor">
+            <Anchor>
               {nextLink.title}
-              <Icon
-                icon="arrow-right"
-                className={classNames(
-                  'article__nav-icon',
-                  'article__nav-icon--next',
-                )}
-              />
-            </a>
+              <NavigationIcon icon="arrow-right" $isNext />
+            </Anchor>
           </Link>
-        </div>
+        </LinkWrapper>
       )}
-    </nav>
+    </Footer>
     <hr />
-    <div className="article__feedback">
+    <Feedback>
       <a
         href={SiteMetadata.feedbackLink}
         target="_blank"
@@ -62,6 +55,39 @@ export const ArticleFooter = ({
       >
         Leave a comment or share feedback on Github
       </a>
-    </div>
+    </Feedback>
   </>
 );
+
+const Footer = styled.nav`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+`;
+
+const LinkWrapper = styled.div`
+  margin-bottom: 1rem;
+`;
+
+const Anchor = styled.a`
+  align-items: center;
+  display: flex;
+`;
+
+const NavigationIcon = styled(Icon)<{ readonly $isNext?: boolean }>`
+  margin-right: 0.5rem;
+
+  ${({ $isNext = false }) =>
+    $isNext &&
+    css`
+      margin-left: 0.5rem;
+      margin-right: 0;
+    `}
+`;
+
+const Feedback = styled.div`
+  display: flex;
+  font-size: 90%;
+  justify-content: center;
+`;

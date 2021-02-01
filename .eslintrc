@@ -22,8 +22,10 @@
   },
   "plugins": ["react", "@typescript-eslint", "react-hooks", "prettier"],
   "rules": {
+    "@typescript-eslint/consistent-type-imports": "error",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/strict-boolean-expressions": "error",
     "@typescript-eslint/unbound-method": "off",
     "import/extensions": [

@@ -1,8 +1,10 @@
+import type { FC } from 'react';
+
 type Props = {
-  readingTime: number;
+  readonly readingTime: number;
 };
 
-export const ReadingTime = ({ readingTime }: Props) => {
+export const ReadingTime: FC<Props> = ({ readingTime }) => {
   const cups = Math.round(readingTime / 5);
   return (
     <span>
