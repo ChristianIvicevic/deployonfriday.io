@@ -1,15 +1,15 @@
 import { SiteMetadata } from 'constants/site-metadata';
+import styled from 'styled-components';
 
 export const Profile = () => (
-  <div className="profile">
-    <img
+  <StyledProfile>
+    <Image
       src="/images/profile.jpg"
       alt={SiteMetadata.author.name}
-      className="profile__image"
       width={48}
       height={48}
     />
-    <p className="profile__description">
+    <Description>
       Personal blog by{' '}
       <a
         href={SiteMetadata.author.url}
@@ -21,6 +21,24 @@ export const Profile = () => (
       .
       <br />
       {SiteMetadata.author.summary}
-    </p>
-  </div>
+    </Description>
+  </StyledProfile>
 );
+
+const StyledProfile = styled.div`
+  align-items: center;
+  display: flex;
+  margin-bottom: 3.5rem;
+`;
+
+const Image = styled.img`
+  border-radius: 50%;
+  height: 3rem;
+  margin-right: 1rem;
+  width: 3rem;
+`;
+
+const Description = styled.p`
+  font-size: 1rem;
+  margin-bottom: 0;
+`;

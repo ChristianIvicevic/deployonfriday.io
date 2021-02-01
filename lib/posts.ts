@@ -14,10 +14,10 @@ import { markdownToHtml } from 'utils/parsers';
 const POSTS_DIRECTORY = path.join(process.cwd(), POSTS_DIRECTORY_ROOT);
 
 type FrontMatterData = {
-  title: string;
-  description: string;
-  date: string;
-  category: string;
+  readonly title: string;
+  readonly description: string;
+  readonly date: string;
+  readonly category: string;
 };
 
 export const getAllPosts = async () =>

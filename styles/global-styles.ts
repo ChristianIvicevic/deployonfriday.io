@@ -1,5 +1,8 @@
+import { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyles = createGlobalStyle`
 body {
-  font-family: $fontMerriweather;
+  font-family: ${props => props.theme.fonts.secondary};
   font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   font-kerning: normal;
   font-size: 100%;
@@ -24,7 +27,7 @@ a {
 }
 
 h1 {
-  font-family: $fontPtSans;
+  font-family: ${props => props.theme.fonts.primary};
   font-weight: 700;
   line-height: 2.5rem;
   text-rendering: optimizeLegibility;
@@ -69,7 +72,7 @@ blockquote {
 hr {
   background: var(--hr);
   border: none;
-  height: 1px;
+  height: 1px !important;
   margin-bottom: calc(1.75rem - 1px);
   margin-left: 0;
   margin-right: 0;
@@ -87,7 +90,7 @@ code[class*='language-'],
 pre[class*='language-'] {
   background: #011627;
   color: white;
-  font-family: Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace;
+  font-family: ${props => props.theme.fonts.tertiary};
   font-feature-settings: normal;
   -webkit-font-smoothing: auto;
   hyphens: none;
@@ -224,3 +227,35 @@ th {
     padding-left: 0.98438rem;
   }
 }
+
+// Github-like section anchor
+.anchor {
+  float: left;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.shiki-highlight {
+  border-radius: 10px;
+  margin-bottom: 1.75rem;
+  margin-left: -1.3125rem;
+  margin-right: -1.3125rem;
+  overflow: auto;
+}
+
+@media (max-width: 672px) {
+  .shiki-highlight {
+    border-radius: 0;
+  }
+}
+
+.shiki-highlight-line {
+  background-color: #022a4b;
+  border-left: 0.25em solid #2b95d6;
+  display: block;
+  margin-left: -1.3125rem;
+  margin-right: -1.3125rem;
+  padding-left: 1.25em;
+  padding-right: 1em;
+}
+`;
