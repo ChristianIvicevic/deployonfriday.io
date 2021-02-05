@@ -18,7 +18,7 @@
     "@blueprintjs/icons": "3.24.0",
     "@types/classnames": "2.2.11",
     "@types/he": "1.1.1",
-    "@types/node": "14.14.22",
+    "@types/node": "14.14.25",
     "@types/parse-numeric-range": "0.0.1",
     "@types/react": "17.0.1",
     "@types/styled-components": "5.1.7",
