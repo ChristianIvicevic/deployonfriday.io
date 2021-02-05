@@ -12,7 +12,7 @@ import unified from 'unified';
 
 export const markdownToHtml = async (markdownContent: string) => {
   const highlighter = await getHighlighter({
-    theme: loadTheme('./constants/shiki-themes/one-dark-pro.json'),
+    theme: await loadTheme('../../constants/shiki-themes/one-dark-pro.json'),
   });
   const basicHtmlContent = (
     await unified()
