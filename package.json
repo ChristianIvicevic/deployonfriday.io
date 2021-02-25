@@ -58,7 +58,7 @@
     "styled-normalize": "8.0.7",
     "type-fest": "0.21.2",
     "typescript": "4.1.5",
-    "unified": "9.2.0"
+    "unified": "9.2.1"
   },
   "engines": {
     "node": ">=12.x"

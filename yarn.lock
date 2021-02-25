@@ -1811,7 +1811,7 @@ __metadata:
     styled-normalize: 8.0.7
     type-fest: 0.21.2
     typescript: 4.1.5
-    unified: 9.2.0
+    unified: 9.2.1
   languageName: unknown
   linkType: soft
 
@@ -6057,9 +6057,9 @@ typescript@4.1.5:
   languageName: node
   linkType: hard
 
-"unified@npm:9.2.0":
-  version: 9.2.0
-  resolution: "unified@npm:9.2.0"
+"unified@npm:9.2.1":
+  version: 9.2.1
+  resolution: "unified@npm:9.2.1"
   dependencies:
     bail: ^1.0.0
     extend: ^3.0.0
@@ -6067,7 +6067,7 @@ typescript@4.1.5:
     is-plain-obj: ^2.0.0
     trough: ^1.0.0
     vfile: ^4.0.0
-  checksum: 07fd97c046b51c49a08d3f3f7b7f10ddc379dc67ca9270fe109b0543c27bf78b15f41b4d89ea1d800ab767906757bbb910af97b8ec39e87429d5ab46ddb56f4b
+  checksum: 7997e5471db476dfc241c319d06f009d3940f8a3819899f4de12a497eaee3654b345068d34832c96d30ddf187e8ad6d6a7a42ce69aeed84586ee8fcd6870de96
   languageName: node
   linkType: hard
 
