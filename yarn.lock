@@ -1667,10 +1667,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"date-fns@npm:2.20.1":
-  version: 2.20.1
-  resolution: "date-fns@npm:2.20.1"
-  checksum: d7676077c30bb9ca983fc857acf38286fc6377fc2790ff181b95e2b30dd981a309eb6d7317d4604250a40f4fa3886b4ba02a87d5c1acd96285bcc9da9bad1440
+"date-fns@npm:2.21.1":
+  version: 2.21.1
+  resolution: "date-fns@npm:2.21.1"
+  checksum: 00a2ddea1047c4ce6eaadda76a0ee0782d1cfe65061641bbff94f7a70d2d6ab12dac89e027b39d49710bdb2cf264bc1a4e096b0324c7de79699296a4c19f4a40
   languageName: node
   linkType: hard
 
@@ -1774,7 +1774,7 @@ __metadata:
     "@typescript-eslint/parser": 4.22.0
     babel-plugin-styled-components: 1.12.0
     classnames: 2.3.1
-    date-fns: 2.20.1
+    date-fns: 2.21.1
     eslint: 7.25.0
     eslint-config-airbnb-typescript: 12.3.1
     eslint-config-prettier: 8.3.0
