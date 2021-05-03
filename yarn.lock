@@ -1799,7 +1799,7 @@ __metadata:
     remark-gfm: 1.0.0
     remark-html: 13.0.1
     remark-parse: 9.0.0
-    remark-rehype: 8.0.0
+    remark-rehype: 8.1.0
     shiki: 0.9.3
     slugify: 1.5.0
     styled-components: 5.2.3
@@ -3817,6 +3817,22 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"mdast-util-to-hast@npm:^10.2.0":
+  version: 10.2.0
+  resolution: "mdast-util-to-hast@npm:10.2.0"
+  dependencies:
+    "@types/mdast": ^3.0.0
+    "@types/unist": ^2.0.0
+    mdast-util-definitions: ^4.0.0
+    mdurl: ^1.0.0
+    unist-builder: ^2.0.0
+    unist-util-generated: ^1.0.0
+    unist-util-position: ^3.0.0
+    unist-util-visit: ^2.0.0
+  checksum: fded0c9b69b69b15128228884cf2387ea9968402e1e3696f33b9806d41de4692ec6a0de385def6dd83be7359a72bff6ba0d5a364c52b0a228e38b5e61fd497d1
+  languageName: node
+  linkType: hard
+
 "mdast-util-to-markdown@npm:^0.5.0":
   version: 0.5.3
   resolution: "mdast-util-to-markdown@npm:0.5.3"
@@ -5117,12 +5133,12 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"remark-rehype@npm:8.0.0":
-  version: 8.0.0
-  resolution: "remark-rehype@npm:8.0.0"
+"remark-rehype@npm:8.1.0":
+  version: 8.1.0
+  resolution: "remark-rehype@npm:8.1.0"
   dependencies:
-    mdast-util-to-hast: ^10.0.0
-  checksum: a74e51b2a98aa0c73508d5d1f5b31acd91c7ee3efc8d3c6d17be8c0ddfce10ab5117e6c236495a60f6dd7a50bb4dec11ae2f7f2cdf53fb971c5722e1e762489b
+    mdast-util-to-hast: ^10.2.0
+  checksum: 6ee85e169a2b9e34c5b39b462dd196c9ff71508664c09a1b13d822fefda61dcb0ad7bd2a34910bd0fa21b8e29312bba1bc5bc7aaaa9090e4a06c62b0e2f46821
   languageName: node
   linkType: hard
 
