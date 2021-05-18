@@ -20,7 +20,7 @@
     "@types/he": "1.1.1",
     "@types/node": "14.14.45",
     "@types/parse-numeric-range": "0.0.1",
-    "@types/react": "17.0.5",
+    "@types/react": "17.0.6",
     "@types/styled-components": "5.1.9",
     "@typescript-eslint/eslint-plugin": "4.24.0",
     "@typescript-eslint/parser": "4.24.0",
