@@ -29,12 +29,8 @@ export const getAllPosts = async () =>
           const fileContents = fs.readFileSync(fileName, 'utf-8');
 
           const frontMatter = matter(fileContents);
-          const {
-            category,
-            date,
-            description,
-            title,
-          } = frontMatter.data as FrontMatterData;
+          const { category, date, description, title } =
+            frontMatter.data as FrontMatterData;
 
           return {
             date: format(parseJSON(date), 'LLLL d, yyyy'),
