@@ -7,7 +7,5 @@ export type ApplicationThemeContext = {
   toggleTheme(): void;
 };
 
-export const [
-  useTheme,
-  ApplicationThemeProvider,
-] = createContext<ApplicationThemeContext>();
+export const [useTheme, ApplicationThemeProvider] =
+  createContext<ApplicationThemeContext>();
