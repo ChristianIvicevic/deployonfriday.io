@@ -21,7 +21,7 @@
     "@types/node": "14.17.3",
     "@types/parse-numeric-range": "0.0.1",
     "@types/react": "17.0.9",
-    "@types/styled-components": "5.1.9",
+    "@types/styled-components": "5.1.10",
     "@typescript-eslint/eslint-plugin": "4.26.1",
     "@typescript-eslint/parser": "4.26.1",
     "babel-plugin-styled-components": "1.12.0",
