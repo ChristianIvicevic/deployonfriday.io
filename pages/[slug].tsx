@@ -93,4 +93,8 @@ const Title = styled.h1`
 
 const Content = styled.div`
   margin-bottom: 4rem;
+
+  & img {
+    width: 100%;
+  }
 `;
