@@ -37,5 +37,12 @@ const StyledCategory = styled(Tag)<Transient<Props>>`
         background: #137cbd;
         color: #182026;
       `}
+
+    ${props =>
+      props.$category === 'Rust' &&
+      css`
+        background: #cc6633;
+        color: #182026;
+      `}
   }
 `;

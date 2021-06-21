@@ -47,4 +47,4 @@ export const getAllPosts = async () =>
           };
         }),
     )
-  ).sort((a, b) => b.date.localeCompare(a.date));
+  ).sort((a, b) => (new Date(b.date) <= new Date(a.date) ? -1 : 1));
