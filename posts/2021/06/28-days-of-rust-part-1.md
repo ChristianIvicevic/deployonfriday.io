@@ -2,7 +2,7 @@
 title: "28 Days of Rust - Part 1: Ownership and the Borrow Checker"
 description: >-
   Let me introduce you to the unique selling point of Rust, the strict notion of ownership along with its Borrow Checker.
-date: 2021-06-21
+date: 2021-06-22
 category: Rust
 ---
 
@@ -12,8 +12,10 @@ It has been a few months now since I started with graphics programming in my fre
 Initially I picked up C++ as my programming language of choice since I was already fairly experienced with it.
 After I learned the basics of the OpenGL rendering API I wanted to move on to Vulkan and made the bold move to try out Rust simultaneously after getting sick of the notorious undefined behaviors and difficulties with C++.
 
-This series of blog posts will summarize some select features I encountered and my opinions about those.
+This series of blog posts will summarize some select features I encountered in my first 28 days of programming with Rust and my opinions about those.
 Please be advised that this will be rather high-level and you should consider these posts to be a first introduction to terminology and features.
+Most unique syntactical features required to understand code snippets will be explained on-the-fly, but I expect familiarity with programming and common language syntax in general in either C, C++, C#, Java or similar languages.
+
 If you happen to be interested in more details please refer to the following resources:
 
 * [The Rust Programming Language](https://doc.rust-lang.org/book/) - This is considered to be the de facto starter resource for anybody interested in Rust.
@@ -130,10 +132,11 @@ In general, you can have as many immutable references to the same object as you 
 ## My opinion on the Borrow Checker
 
 In theory the Borrow Checker is an awesome concept and in those small example snippets it looks really useful and does its job just fine.
-However I had some serious issues when trying to apply my old mental models I had from C++ to Rust as some of my code that always worked would not pass the strict rules of the Borrow Checker due to some really odd cases where it wasn't guarantee to behave correctly which did never occur anyways.
-It was really difficult to learn some of the rules and intricacies, especially when handling objects or passing objects into lambdas where the system was too strict for my taste.
+However I had some serious issues when trying to apply my old mental models I had from C++ to Rust as some of my code that always worked would not pass the strict rules of the Borrow Checker.
+My previous code had some theoretical edge cases (that were never reached during runtime) where it wasn't guaranteed to behave correctly and thus causing the compiler to complain.
+It was really difficult to learn some of the rules and intricacies, especially when handling objects or passing objects into lambdas where the system was too strict for my taste, but more on that in the following posts.
 
 An actual benefit is the guarantee that certain errors will never occur during runtime and memory issues are the most common problem in system-programming.
-Unfortunately I did not profit off of it so far since I have been working with a lot of unsafe code where those guarantees cannot be applied to.
+Unfortunately I did not profit off of it so far since I have been working with a lot of unsafe code calling into 3rd party libraries written in C where those guarantees cannot be applied to.
 
 At least the compiler has descriptive errors messages and explains the cause for most of the errors one will run into when battling the Borrow Checker.
