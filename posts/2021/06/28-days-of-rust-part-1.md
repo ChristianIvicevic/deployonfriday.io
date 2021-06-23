@@ -2,7 +2,7 @@
 title: "28 Days of Rust - Part 1: Ownership and the Borrow Checker"
 description: >-
   Let me introduce you to the unique selling point of Rust, the strict notion of ownership along with its Borrow Checker.
-date: 2021-06-22
+date: 2021-06-23
 category: Rust
 ---
 
