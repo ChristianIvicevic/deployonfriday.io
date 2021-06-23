@@ -97,4 +97,9 @@ const Content = styled.div`
   & img {
     width: 100%;
   }
+
+  figcaption {
+    font-size: 0.9rem;
+    opacity: 0.75;
+  }
 `;

@@ -21,24 +21,13 @@ If you happen to be interested in more details please refer to the following res
 * [The Rust Programming Language](https://doc.rust-lang.org/book/) - This is considered to be the de facto starter resource for anybody interested in Rust.
 * [Rust By Example](https://doc.rust-lang.org/rust-by-example/index.html) - Alternatively this book is for those who don't want to read some technical documentation or prosaic explanations and just want to see code.
 
-## Outline
-
-Currently I am planning to release the following set of blog posts, but the contents are subject to change:
-
-1. Ownership and the Borrow Checker
-2. OOP and polymorphism through traits
-3. Monads as first-class citizens
-4. Documentation and testing
-5. Compiler toolchain and the ecosystem
-6. Use cases for Rust
-
 ## Static analysis and guarantees for the memory
 
 Let's dive right into the feature that makes Rust so different from other languages, the concept of ownership and the verification using the Borrow Checker.
 If you've ever programmed in Java you may be familiar with the infamous and often unexpected `NullPointerException`.
 An indicator that an object that you're trying to access happens to be `null` when you least expect it.
 
-![The Spanish Inquisition from Monty Python's Flying Circus](images/2021/06/spanish-inquisition.jpeg)
+![The Spanish Inquisition from Monty Python's Flying Circus](images/2021/06/spanish-inquisition.jpeg "Nobody expects the Spanish Inquisition - a classic sketch from Monty Python's Flying Circus")
 
 Unfortunately this exception occurs during runtime and it may be annoying to see this faulty behavior and memory issue in production.
 
@@ -48,7 +37,7 @@ Similar to how Typescript brought strict type safety to Javascript, Rust enforce
 
 ### Ownership
 
-Unlike in languages with garbage collection such as Java or C# passing objects in Rust is done explicitly either by-value or by-reference.
+Unlike in languages with garbage collection such as Java or C# passing objects in Rust is done explicitly either by value or by reference.
 By default every function takes their arguments by-value using a move operation passing ownership along unless otherwise specified.
 The three common scenarios are the following:
 
@@ -140,3 +129,5 @@ An actual benefit is the guarantee that certain errors will never occur during r
 Unfortunately I did not profit off of it so far since I have been working with a lot of unsafe code calling into 3rd party libraries written in C where those guarantees cannot be applied to.
 
 At least the compiler has descriptive errors messages and explains the cause for most of the errors one will run into when battling the Borrow Checker.
+
+In part 2 we'll be taking a look at OOP in Rust (or the lack thereof) and polymorphism through traits.
