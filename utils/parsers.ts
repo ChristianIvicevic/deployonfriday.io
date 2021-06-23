@@ -3,6 +3,7 @@ import parseNumericRange from 'parse-numeric-range';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import rehypeStringify from 'rehype-stringify';
+import rehypeTitleFigure from 'rehype-title-figure';
 import remarkExternalLinks from 'remark-external-links';
 import remarkGfm from 'remark-gfm';
 import remarkParse from 'remark-parse';
@@ -20,6 +21,7 @@ export const markdownToHtml = async (markdownContent: string) => {
       .use(remarkGfm)
       .use(remarkExternalLinks)
       .use(remark2rehype)
+      .use(rehypeTitleFigure)
       .use(rehypeStringify)
       .use(rehypeSlug)
       .use(rehypeAutolinkHeadings, {

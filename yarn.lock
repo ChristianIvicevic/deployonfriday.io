@@ -391,6 +391,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/hast@npm:^2.0.0":
+  version: 2.3.1
+  resolution: "@types/hast@npm:2.3.1"
+  dependencies:
+    "@types/unist": "*"
+  checksum: 8aff367be477854d6cd3e5cf03d7154cd163a67bc3266777c2f4b1c32d07a335420ba58a8a799965dbc3190f1ed9989880008afb1392043290acc384a155a7a3
+  languageName: node
+  linkType: hard
+
 "@types/he@npm:1.1.1":
   version: 1.1.1
   resolution: "@types/he@npm:1.1.1"
@@ -1818,6 +1827,7 @@ __metadata:
     rehype-autolink-headings: 5.1.0
     rehype-slug: 4.0.1
     rehype-stringify: 8.0.0
+    rehype-title-figure: 0.1.1
     remark-external-links: 8.0.0
     remark-gfm: 1.0.0
     remark-html: 13.0.1
@@ -3027,6 +3037,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"hast-util-parse-selector@npm:^2.0.0":
+  version: 2.2.5
+  resolution: "hast-util-parse-selector@npm:2.2.5"
+  checksum: a9f5dc8f7d0c72e2934c3eda4eb9794dd522c595676ee3ef71fd42aacd8f9faff6a5130f6afa3878037f2a4a1cf8877010fe0f9278a0f86c6148a92815aae312
+  languageName: node
+  linkType: hard
+
 "hast-util-sanitize@npm:^3.0.0":
   version: 3.0.1
   resolution: "hast-util-sanitize@npm:3.0.1"
@@ -3065,6 +3082,19 @@ fsevents@~2.3.1:
   version: 1.0.4
   resolution: "hast-util-whitespace@npm:1.0.4"
   checksum: 4acef9a83ddaa40eeb03fd1098a8f01fd3f0f48377190146a007fcec5f32f85d93490d5439e513471474bb17439826f0241091f6e2fde15b9193f132fb342f5f
+  languageName: node
+  linkType: hard
+
+"hastscript@npm:6.0.0":
+  version: 6.0.0
+  resolution: "hastscript@npm:6.0.0"
+  dependencies:
+    "@types/hast": ^2.0.0
+    comma-separated-tokens: ^1.0.0
+    hast-util-parse-selector: ^2.0.0
+    property-information: ^5.0.0
+    space-separated-tokens: ^1.0.0
+  checksum: c801a859137b7b0092235e50b5c9927c8e0ddbfc4739f4da5bf20170821be6bd883744a11ed2a3909d00d24964632892118913b3b13b02601018035da8b00b52
   languageName: node
   linkType: hard
 
@@ -5226,6 +5256,16 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"rehype-title-figure@npm:0.1.1":
+  version: 0.1.1
+  resolution: "rehype-title-figure@npm:0.1.1"
+  dependencies:
+    hastscript: 6.0.0
+    unist-util-visit: 2.0.3
+  checksum: cf47bf450355e13feb0f52f8f6ae73305ffe5f6e07f38bdef4925b16685dd5934cdbf16cc37652f24c0bcef7c5465190687c09eb0f5f1181d8384482cc063edc
+  languageName: node
+  linkType: hard
+
 "remark-external-links@npm:8.0.0":
   version: 8.0.0
   resolution: "remark-external-links@npm:8.0.0"
@@ -6394,7 +6434,7 @@ typescript@4.2.4:
   languageName: node
   linkType: hard
 
-"unist-util-visit@npm:^2.0.0":
+"unist-util-visit@npm:2.0.3, unist-util-visit@npm:^2.0.0":
   version: 2.0.3
   resolution: "unist-util-visit@npm:2.0.3"
   dependencies:
