@@ -1851,7 +1851,7 @@ __metadata:
     remark-html: 13.0.1
     remark-parse: 9.0.0
     remark-rehype: 8.1.0
-    shiki: 0.9.3
+    shiki: 0.9.5
     slugify: 1.5.3
     styled-components: 5.3.0
     styled-normalize: 8.0.7
@@ -3711,6 +3711,17 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"json5@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "json5@npm:2.2.0"
+  dependencies:
+    minimist: ^1.2.5
+  bin:
+    json5: lib/cli.js
+  checksum: 07b1f90c2801dc52df2b0ac8d606cc400a85cda79130e754780fa2ab9805d0fb85a0e61b6a5cdd68e88e5d0c8f9109ec415af08283175556cdccaa8563853908
+  languageName: node
+  linkType: hard
+
 "jsprim@npm:^1.2.2":
   version: 1.4.1
   resolution: "jsprim@npm:1.4.1"
@@ -4178,7 +4189,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"minimist@npm:^1.2.0":
+"minimist@npm:^1.2.0, minimist@npm:^1.2.5":
   version: 1.2.5
   resolution: "minimist@npm:1.2.5"
   checksum: b77b8590147a4e217ff34266236bc39de23b52e6e33054076991ff674c7397a1380a7bde11111916f16f003a94aaa7e4f3d92595a32189644ff607fabc65a5b6
@@ -5637,13 +5648,14 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"shiki@npm:0.9.3":
-  version: 0.9.3
-  resolution: "shiki@npm:0.9.3"
+"shiki@npm:0.9.5":
+  version: 0.9.5
+  resolution: "shiki@npm:0.9.5"
   dependencies:
+    json5: ^2.2.0
     onigasm: ^2.2.5
-    vscode-textmate: ^5.2.0
-  checksum: fce8084727491c496187abe5b8f831dbecdada11ebcc2861335a31fb7eb3d3ebceaf50aec2f2d855f76af626ddb66dabd860536e334b3cb9feff7e79d61ccde0
+    vscode-textmate: 5.2.0
+  checksum: e4ca684e37cc47c64e451e7f09bdd440e7a8fccbbe2cc051e283dd3a4582a921ec9fa47568498c3fc3838a0ae67916769e9f4e7310161c8cd5503192be7d1eae
   languageName: node
   linkType: hard
 
@@ -6607,7 +6619,7 @@ typescript@4.3.5:
   languageName: node
   linkType: hard
 
-"vscode-textmate@npm:^5.2.0":
+"vscode-textmate@npm:5.2.0":
   version: 5.2.0
   resolution: "vscode-textmate@npm:5.2.0"
   checksum: 67ec1fed58690b6d21fb75462694ebfeefe93d9a4091dfbea9db4e1b718d172ac2e60e3944a0dd88c53ff50e7604dfcccde19d8a4d25616c0b2df330052df2b9

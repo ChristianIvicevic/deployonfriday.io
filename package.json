@@ -53,7 +53,7 @@
     "remark-html": "13.0.1",
     "remark-parse": "9.0.0",
     "remark-rehype": "8.1.0",
-    "shiki": "0.9.3",
+    "shiki": "0.9.5",
     "slugify": "1.5.3",
     "styled-components": "5.3.0",
     "styled-normalize": "8.0.7",
