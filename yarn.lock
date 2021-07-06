@@ -418,10 +418,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/he@npm:1.1.1":
-  version: 1.1.1
-  resolution: "@types/he@npm:1.1.1"
-  checksum: 9271bf8ded840b8d30ba1d9475b432c4cb408cbf2fe931fa3f02599a9bf4378f5b2fcfa437339e7c0eee6e66804073a62c39cd0c377276938f53b94a110b28e8
+"@types/he@npm:1.1.2":
+  version: 1.1.2
+  resolution: "@types/he@npm:1.1.2"
+  checksum: 8aa0fbf7d7677e0eaa4c79fbc0f0eaf63abe4dec3eaeb5ebdcfaecaa74ee2fcabf7d347380f6ac0630846ded21d64b239e4fdb7865c134b6fd2e4920ff81e46a
   languageName: node
   linkType: hard
 
@@ -1815,7 +1815,7 @@ __metadata:
     "@blueprintjs/core": 3.46.0
     "@blueprintjs/icons": 3.27.0
     "@types/classnames": 2.3.0
-    "@types/he": 1.1.1
+    "@types/he": 1.1.2
     "@types/node": 14.17.4
     "@types/parse-numeric-range": 0.0.1
     "@types/react": 17.0.13
