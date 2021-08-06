@@ -175,9 +175,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@blueprintjs/core@npm:3.46.0":
-  version: 3.46.0
-  resolution: "@blueprintjs/core@npm:3.46.0"
+"@blueprintjs/core@npm:3.47.0":
+  version: 3.47.0
+  resolution: "@blueprintjs/core@npm:3.47.0"
   dependencies:
     "@blueprintjs/icons": ^3.27.0
     "@types/dom4": ^2.0.1
@@ -196,7 +196,7 @@ __metadata:
   bin:
     upgrade-blueprint-2.0.0-rename: scripts/upgrade-blueprint-2.0.0-rename.sh
     upgrade-blueprint-3.0.0-rename: scripts/upgrade-blueprint-3.0.0-rename.sh
-  checksum: be52a8e47f5a3193b0bea490773967cc22d71a788d61f60395b3763618defd842d80d3e7c8e51ae48c445623478c41e96753376d58fe3caa6bc00201844834e2
+  checksum: e6762e94f93e18d650ecaef75018b5a0e14d6cc1e625036e5f4acd4ff520691d2d362b688e943d18fa99ff8f78925e08e9111890f1a3aba478e61190dc51979e
   languageName: node
   linkType: hard
 
@@ -1826,7 +1826,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "deployonfriday.io@workspace:."
   dependencies:
-    "@blueprintjs/core": 3.46.0
+    "@blueprintjs/core": 3.47.0
     "@blueprintjs/icons": 3.27.0
     "@types/classnames": 2.3.0
     "@types/he": 1.1.2
