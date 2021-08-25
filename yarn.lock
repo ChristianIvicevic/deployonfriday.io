@@ -1873,7 +1873,7 @@ __metadata:
     remark-html: 13.0.1
     remark-parse: 9.0.0
     remark-rehype: 8.1.0
-    shiki: 0.9.6
+    shiki: 0.9.7
     slugify: 1.6.0
     styled-components: 5.3.0
     styled-normalize: 8.0.7
@@ -5658,14 +5658,14 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"shiki@npm:0.9.6":
-  version: 0.9.6
-  resolution: "shiki@npm:0.9.6"
+"shiki@npm:0.9.7":
+  version: 0.9.7
+  resolution: "shiki@npm:0.9.7"
   dependencies:
     json5: ^2.2.0
     onigasm: ^2.2.5
     vscode-textmate: 5.2.0
-  checksum: f8f31a8aa9364182daf12fb4830e77f5a0ee86754caf8ef8f9c3167e81131501a2962d545a8e88268a2b75dd0760e5401d51b302cdb85746719140a8b120a911
+  checksum: a7288647200f37ee7c76fa1d8660c11999e7dff4941afd97799c5aad6445326b2eb248d2faf27b2c21ba1609c4c2c3050b51b47a29f8e1eedabd7d44607edea8
   languageName: node
   linkType: hard
 
