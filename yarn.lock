@@ -1859,7 +1859,7 @@ __metadata:
     gray-matter: 4.0.3
     he: 1.2.0
     next: 10.2.3
-    parse-numeric-range: 1.2.0
+    parse-numeric-range: 1.3.0
     prettier: 2.3.2
     react: 17.0.2
     react-dom: 17.0.2
@@ -4755,10 +4755,10 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"parse-numeric-range@npm:1.2.0":
-  version: 1.2.0
-  resolution: "parse-numeric-range@npm:1.2.0"
-  checksum: 40557750b3bd855a912fb0ef0754eef21497b7093fdc5da7d19afdd2d2c8ed1dae7299dfc49288fb55942a1e6a05e27b7780a9d5345dc0718c3c2531ebae9548
+"parse-numeric-range@npm:1.3.0":
+  version: 1.3.0
+  resolution: "parse-numeric-range@npm:1.3.0"
+  checksum: d051fd4f459cbfe75236216a12fdd90a62a4d2e8cb13008f9ae4c48602e79570d8ce11c413803c52d418c2599cd6a6040ea7692a35f404ca3942cb4b008e48f8
   languageName: node
   linkType: hard
 
