@@ -60,9 +60,6 @@
     "styled-normalize": "8.0.7",
     "type-fest": "2.1.0",
     "typescript": "4.3.5",
-    "unified": "9.2.2"
-  },
-  "engines": {
-    "node": ">=12.x"
+    "unified": "10.1.0"
   }
 }

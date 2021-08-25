@@ -9,7 +9,7 @@ import remarkGfm from 'remark-gfm';
 import remarkParse from 'remark-parse';
 import remark2rehype from 'remark-rehype';
 import { getHighlighter, loadTheme } from 'shiki';
-import unified from 'unified';
+import { unified } from 'unified';
 
 export const markdownToHtml = async (markdownContent: string) => {
   const highlighter = await getHighlighter({
