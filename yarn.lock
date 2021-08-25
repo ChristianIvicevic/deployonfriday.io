@@ -1863,7 +1863,7 @@ __metadata:
     prettier: 2.3.2
     react: 17.0.2
     react-dom: 17.0.2
-    reading-time: 1.3.0
+    reading-time: 1.4.0
     rehype-autolink-headings: 5.1.0
     rehype-slug: 4.0.1
     rehype-stringify: 8.0.0
@@ -5221,10 +5221,10 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"reading-time@npm:1.3.0":
-  version: 1.3.0
-  resolution: "reading-time@npm:1.3.0"
-  checksum: c1613eb67eacbe8b275da832d59c0dd3c957f9fc6d0ad71eff7ed6f601b8bffa28b8a9d28ae8f6a1e286adc6f719304b41166d7e34c4c3b1bd4893d266121554
+"reading-time@npm:1.4.0":
+  version: 1.4.0
+  resolution: "reading-time@npm:1.4.0"
+  checksum: ec9e52f58e3199b05bd3a543843125712205b536c1f2c254785481659c5a940d1c0123795daccac219936db5e793b42aafcd6daf871ab6f095854a1810b978df
   languageName: node
   linkType: hard
 
