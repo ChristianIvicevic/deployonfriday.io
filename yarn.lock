@@ -1898,7 +1898,7 @@ __metadata:
     react: 17.0.2
     react-dom: 17.0.2
     reading-time: 1.4.0
-    rehype-autolink-headings: 5.1.0
+    rehype-autolink-headings: 6.1.0
     rehype-slug: 4.0.1
     rehype-stringify: 8.0.0
     rehype-title-figure: 0.1.1
@@ -3076,10 +3076,26 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"hast-util-has-property@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "hast-util-has-property@npm:2.0.0"
+  checksum: 95e351be057b3fd20e939487f63daad981e7c7daf5d562e6d0c0a5f0749ecce41badfd222e770f4888a3520f4010ad477ae782130b9b942c65dcd75c1e5b544e
+  languageName: node
+  linkType: hard
+
 "hast-util-heading-rank@npm:^1.0.0":
   version: 1.0.1
   resolution: "hast-util-heading-rank@npm:1.0.1"
   checksum: 41313004fe574bf56beac4f66f84fabd8af9df4861257a13424f67cf4a27c4dc8efecacf4fefde2301fe30da7043803f3817d12cf2db64d56ac5e003dc5bad45
+  languageName: node
+  linkType: hard
+
+"hast-util-heading-rank@npm:^2.0.0":
+  version: 2.1.0
+  resolution: "hast-util-heading-rank@npm:2.1.0"
+  dependencies:
+    "@types/hast": ^2.0.0
+  checksum: 1e932921d4b20a64a7e34bc57088e4f9983cb9868e9dd8a4a47bd5de1d8c760b41d04561d7e6e2d7d0c138a854b3b3c590d20a2875763eb9084748da33c07a7c
   languageName: node
   linkType: hard
 
@@ -5575,15 +5591,18 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"rehype-autolink-headings@npm:5.1.0":
-  version: 5.1.0
-  resolution: "rehype-autolink-headings@npm:5.1.0"
+"rehype-autolink-headings@npm:6.1.0":
+  version: 6.1.0
+  resolution: "rehype-autolink-headings@npm:6.1.0"
   dependencies:
+    "@types/hast": ^2.0.0
     extend: ^3.0.0
-    hast-util-has-property: ^1.0.0
-    hast-util-heading-rank: ^1.0.0
-    unist-util-visit: ^2.0.0
-  checksum: 9d3858e3d866580832417c4833856380a2ffdd038ef5335f0295486a504396309451126dba484de635025b7c6c391909051f192c2cb8f8d0858abc00a2fe8416
+    hast-util-has-property: ^2.0.0
+    hast-util-heading-rank: ^2.0.0
+    hast-util-is-element: ^2.0.0
+    unified: ^10.0.0
+    unist-util-visit: ^4.0.0
+  checksum: 0dda67b8d6ad9976aa4e03844342a83b6730ff3b9cb7f6401e4b927320f48d7f0ad7be669e66ab203cdd1fe580baa50c9b5d9f3a5bdc3d4597021e0a491632f9
   languageName: node
   linkType: hard
 
