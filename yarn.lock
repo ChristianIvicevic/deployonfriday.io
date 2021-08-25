@@ -1332,13 +1332,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ccount@npm:^1.0.0":
-  version: 1.1.0
-  resolution: "ccount@npm:1.1.0"
-  checksum: 3f665763cbb12fc8db2732937e748e838f9c33fb07abdde7a0f2a908db2a8b9a9eb4b91c879ca87b75be0407c4e34d707ad04f3410e943561ff2f6cf6f44047d
-  languageName: node
-  linkType: hard
-
 "ccount@npm:^2.0.0":
   version: 2.0.0
   resolution: "ccount@npm:2.0.0"
@@ -1377,24 +1370,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"character-entities-html4@npm:^1.0.0":
-  version: 1.1.4
-  resolution: "character-entities-html4@npm:1.1.4"
-  checksum: 1022eecdd5c5c16dd7b0f265a805f97af752d866d94162ef18f0cdce99cd7307ae39e1acfeba48fc85eae498b9232a191c11a9254f0cb0d8f1d2f8ee1ab77d89
-  languageName: node
-  linkType: hard
-
 "character-entities-html4@npm:^2.0.0":
   version: 2.0.0
   resolution: "character-entities-html4@npm:2.0.0"
   checksum: 79ce3a03b83728870e949b89de95a6b04929c4f56a54019dff6b4d2f7f3fdbc0c9ff987664b331185e884a35f20470404cfafc7096b693201ff3f3834ee3e725
-  languageName: node
-  linkType: hard
-
-"character-entities-legacy@npm:^1.0.0":
-  version: 1.1.4
-  resolution: "character-entities-legacy@npm:1.1.4"
-  checksum: bb1e426146681405edaaf349ac045533c8a2540958c824e90b7c2286bdbf1a4706c0b524983f5e0f2bee776bdf29cadb1240af60c02d192b24e3e227f2c84bca
   languageName: node
   linkType: hard
 
@@ -1900,7 +1879,7 @@ __metadata:
     reading-time: 1.4.0
     rehype-autolink-headings: 6.1.0
     rehype-slug: 5.0.0
-    rehype-stringify: 8.0.0
+    rehype-stringify: 9.0.1
     rehype-title-figure: 0.1.1
     remark-external-links: 9.0.1
     remark-gfm: 2.0.0
@@ -3085,13 +3064,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"hast-util-is-element@npm:^1.0.0":
-  version: 1.1.0
-  resolution: "hast-util-is-element@npm:1.1.0"
-  checksum: fb8241c9a0ef166f4fc812f30148573e80db44f0c99dedbcff69016800edcb7c9383abf0789d8cd1389c0ec8a75efd078bbdb75254db9aec6cb5d599c7672244
-  languageName: node
-  linkType: hard
-
 "hast-util-is-element@npm:^2.0.0":
   version: 2.1.1
   resolution: "hast-util-is-element@npm:2.1.1"
@@ -3115,24 +3087,6 @@ fsevents@~2.3.1:
   dependencies:
     "@types/hast": ^2.0.0
   checksum: ccfc4efdc8b3d0d21eca3ec76a215ea6520edf453af7669e3d63e46a498f67387f7a40307b9d512d0f7a1320d31f2050b458d6414bacc3e6b464b140d371eda3
-  languageName: node
-  linkType: hard
-
-"hast-util-to-html@npm:^7.1.1":
-  version: 7.1.2
-  resolution: "hast-util-to-html@npm:7.1.2"
-  dependencies:
-    ccount: ^1.0.0
-    comma-separated-tokens: ^1.0.0
-    hast-util-is-element: ^1.0.0
-    hast-util-whitespace: ^1.0.0
-    html-void-elements: ^1.0.0
-    property-information: ^5.0.0
-    space-separated-tokens: ^1.0.0
-    stringify-entities: ^3.0.1
-    unist-util-is: ^4.0.0
-    xtend: ^4.0.0
-  checksum: b48dae90937b50776c31711eac81f474a389514c706280cde81087e7e5e5e791acdfd89528b3a7b0fba4beb8955c91918f022d4a7a3fd2c9439125195ab1d2e8
   languageName: node
   linkType: hard
 
@@ -3160,13 +3114,6 @@ fsevents@~2.3.1:
   dependencies:
     "@types/hast": ^2.0.0
   checksum: 0cb45e3171621425a4aa895ea783474763d3a2e40bdb8333f0bcc38cea7ebde7f564b8e702f6c3ed576a2b7742077b4c4233f82eb6854e4b07e10bc7e6756fc7
-  languageName: node
-  linkType: hard
-
-"hast-util-whitespace@npm:^1.0.0":
-  version: 1.0.4
-  resolution: "hast-util-whitespace@npm:1.0.4"
-  checksum: 4acef9a83ddaa40eeb03fd1098a8f01fd3f0f48377190146a007fcec5f32f85d93490d5439e513471474bb17439826f0241091f6e2fde15b9193f132fb342f5f
   languageName: node
   linkType: hard
 
@@ -3223,13 +3170,6 @@ fsevents@~2.3.1:
   version: 2.8.8
   resolution: "hosted-git-info@npm:2.8.8"
   checksum: 3ecc389dc6ecbd5463fada7e04461e96f3c817fe2f989ca41e9dd3b503745a0bfa26fba405861b2831ca64edc1abc5d2fbc97ee977303f89650dac4fbfdc2d7a
-  languageName: node
-  linkType: hard
-
-"html-void-elements@npm:^1.0.0":
-  version: 1.0.5
-  resolution: "html-void-elements@npm:1.0.5"
-  checksum: 62cb426bd3fee67f027b43f994d19003b3df8426d38f820f7fccddf9eba7fca502f6f3ee306432c8ed4e81439764cd45c2f304ea7e9e3374c682a3771e357696
   languageName: node
   linkType: hard
 
@@ -5609,12 +5549,14 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"rehype-stringify@npm:8.0.0":
-  version: 8.0.0
-  resolution: "rehype-stringify@npm:8.0.0"
+"rehype-stringify@npm:9.0.1":
+  version: 9.0.1
+  resolution: "rehype-stringify@npm:9.0.1"
   dependencies:
-    hast-util-to-html: ^7.1.1
-  checksum: c1d8472fc0f474d85be3c77f4929abb43eb92e445d7796b5a0bf17565f7dc7253c11ebeda9f00c8aad52bbf1b2fb31fa1f72900fe2f8e96a2826719a30031cc1
+    "@types/hast": ^2.0.0
+    hast-util-to-html: ^8.0.0
+    unified: ^10.0.0
+  checksum: a309bd653235170f9bb52cfb937d4749631e6056da42cf087be54ce78434334894b7eaedf21f443e398ab775d10a77c9550c69748a0de3b69e9186a785141515
   languageName: node
   linkType: hard
 
@@ -6318,17 +6260,6 @@ resolve@^2.0.0-next.3:
   dependencies:
     safe-buffer: ~5.1.0
   checksum: bc2dc169d83df1b9e94defe7716bcad8a19ffe8211b029581cb0c6f9e83a6a7ba9ec3be38d179708a8643c692868a2b8b004ab159555dc26089ad3fa7b2158f5
-  languageName: node
-  linkType: hard
-
-"stringify-entities@npm:^3.0.1":
-  version: 3.1.0
-  resolution: "stringify-entities@npm:3.1.0"
-  dependencies:
-    character-entities-html4: ^1.0.0
-    character-entities-legacy: ^1.0.0
-    xtend: ^4.0.0
-  checksum: 4d33442e565cc4975ef2fa67a0d410b13615a43d99a037dfe588b40b32d88302f4fb8fec9ec7dac5241d2c0e952e9e8277323b5898bf52f67d1ff2fda70e16b9
   languageName: node
   linkType: hard
 
