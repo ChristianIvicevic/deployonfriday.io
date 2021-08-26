@@ -587,14 +587,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/styled-components@npm:5.1.12":
-  version: 5.1.12
-  resolution: "@types/styled-components@npm:5.1.12"
+"@types/styled-components@npm:5.1.13":
+  version: 5.1.13
+  resolution: "@types/styled-components@npm:5.1.13"
   dependencies:
     "@types/hoist-non-react-statics": "*"
     "@types/react": "*"
     csstype: ^3.0.2
-  checksum: 46822c41bf7e16598a7bf13c8d693754c9f2c607ae2052983a0630828809f6efd95d7493542a9a041b82799139ea7be95ff83cfae794ed5b0c6fd9ba3eaebf88
+  checksum: dc88ae98ed11df34c230d15218852124a1ec6697b00a2fc125dea60cdda53f6a3b578636516757a4d2d80a8d2faead95c74fd862f1af09657248eebaf48e903d
   languageName: node
   linkType: hard
 
@@ -1853,7 +1853,7 @@ __metadata:
     "@types/node": 14.17.12
     "@types/parse-numeric-range": 0.0.1
     "@types/react": 17.0.19
-    "@types/styled-components": 5.1.12
+    "@types/styled-components": 5.1.13
     "@typescript-eslint/eslint-plugin": 4.29.3
     "@typescript-eslint/parser": 4.29.3
     babel-plugin-styled-components: 1.13.2
