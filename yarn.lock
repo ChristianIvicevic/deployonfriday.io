@@ -1867,7 +1867,7 @@ __metadata:
     eslint-plugin-import: 2.24.2
     eslint-plugin-jsx-a11y: 6.4.1
     eslint-plugin-prettier: 3.4.1
-    eslint-plugin-react: 7.24.0
+    eslint-plugin-react: 7.25.0
     eslint-plugin-react-hooks: 4.2.0
     gray-matter: 4.0.3
     he: 1.2.0
@@ -2359,13 +2359,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:7.24.0":
-  version: 7.24.0
-  resolution: "eslint-plugin-react@npm:7.24.0"
+"eslint-plugin-react@npm:7.25.0":
+  version: 7.25.0
+  resolution: "eslint-plugin-react@npm:7.25.0"
   dependencies:
     array-includes: ^3.1.3
     array.prototype.flatmap: ^1.2.4
     doctrine: ^2.1.0
+    estraverse: ^5.2.0
     has: ^1.0.3
     jsx-ast-utils: ^2.4.1 || ^3.0.0
     minimatch: ^3.0.4
@@ -2377,7 +2378,7 @@ __metadata:
     string.prototype.matchall: ^4.0.5
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7
-  checksum: 256e25dc8dde4664361b4a47ee452065444491fb5e694b52f9c5f56b8d8bd25c6e7ac660d722b234c7fdc7d29a1dffebdc30c9b7eee4f840d883da922882460a
+  checksum: 1a73701764d95371f1867bdceb24f15ffc9883f5e831a70e706bce756ae3f50b948eff7f4e1e40bc52c5de13f2be82993b9075234df43e93cd779f5336dc94c7
   languageName: node
   linkType: hard
 
