@@ -1920,7 +1920,7 @@ __metadata:
     rehype-title-figure: 0.1.1
     remark-external-links: 9.0.1
     remark-gfm: 2.0.0
-    remark-html: 14.0.0
+    remark-html: 14.0.1
     remark-parse: 10.0.0
     remark-rehype: 9.0.0
     shiki: 0.9.10
@@ -5649,16 +5649,16 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"remark-html@npm:14.0.0":
-  version: 14.0.0
-  resolution: "remark-html@npm:14.0.0"
+"remark-html@npm:14.0.1":
+  version: 14.0.1
+  resolution: "remark-html@npm:14.0.1"
   dependencies:
     "@types/mdast": ^3.0.0
     hast-util-sanitize: ^4.0.0
     hast-util-to-html: ^8.0.0
     mdast-util-to-hast: ^11.0.0
     unified: ^10.0.0
-  checksum: 13d95f70669725c6f5bb9cf1a80967393c045f575a818b0e6263cda016507d1fb672c2429d5265e610612bffc794946572a2b45e23c6b6b25b790e6e32bc3d52
+  checksum: 32169c837a21d61cc2b0454be379b7060149b319589ed0f7c2aa1379a274cb028a69fb6200714f3302f283c3ecf6597dee0a8df12c61e949f3d02111fd5605d1
   languageName: node
   linkType: hard
 
