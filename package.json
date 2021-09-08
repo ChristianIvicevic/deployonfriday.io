@@ -51,7 +51,7 @@
     "rehype-title-figure": "0.1.1",
     "remark-external-links": "9.0.1",
     "remark-gfm": "2.0.0",
-    "remark-html": "14.0.0",
+    "remark-html": "14.0.1",
     "remark-parse": "10.0.0",
     "remark-rehype": "9.0.0",
     "shiki": "0.9.10",
