@@ -575,10 +575,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:14.17.12":
-  version: 14.17.12
-  resolution: "@types/node@npm:14.17.12"
-  checksum: 5fdad55934317c1cbaadbb57cf32e56bdda9f25bc3a3e3fef38579e2e4b96c15272918ec7631c26b8980756c57c4b29457ef33f10271a93843868ca01208e40e
+"@types/node@npm:14.17.15":
+  version: 14.17.15
+  resolution: "@types/node@npm:14.17.15"
+  checksum: c9f5b6fa6a383ebecf57ad85d75e7c1df9c1e31ba8468f2193d63177f52f9472c08677f68959bae3defce038e9ebf3d8954edcae93f99225d6a74e6b88e68521
   languageName: node
   linkType: hard
 
@@ -1887,7 +1887,7 @@ __metadata:
     "@blueprintjs/icons": 3.29.0
     "@types/classnames": 2.3.0
     "@types/he": 1.1.2
-    "@types/node": 14.17.12
+    "@types/node": 14.17.15
     "@types/parse-numeric-range": 0.0.1
     "@types/react": 17.0.20
     "@types/styled-components": 5.1.14
