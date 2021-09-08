@@ -1916,7 +1916,7 @@ __metadata:
     reading-time: 1.4.0
     rehype-autolink-headings: 6.1.0
     rehype-slug: 5.0.0
-    rehype-stringify: 9.0.1
+    rehype-stringify: 9.0.2
     rehype-title-figure: 0.1.1
     remark-external-links: 9.0.1
     remark-gfm: 2.0.0
@@ -5600,14 +5600,14 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"rehype-stringify@npm:9.0.1":
-  version: 9.0.1
-  resolution: "rehype-stringify@npm:9.0.1"
+"rehype-stringify@npm:9.0.2":
+  version: 9.0.2
+  resolution: "rehype-stringify@npm:9.0.2"
   dependencies:
     "@types/hast": ^2.0.0
     hast-util-to-html: ^8.0.0
     unified: ^10.0.0
-  checksum: a309bd653235170f9bb52cfb937d4749631e6056da42cf087be54ce78434334894b7eaedf21f443e398ab775d10a77c9550c69748a0de3b69e9186a785141515
+  checksum: 359cf5542836ea78c9bcf63db08e7888be1c47665f16af0b7e0b6c1cbd8c26a62247feb8ebb1e5613a4292e7507def79e678d1a0f719316c3ccb91b464c46cfd
   languageName: node
   linkType: hard
 
