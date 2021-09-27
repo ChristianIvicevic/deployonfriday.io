@@ -1928,7 +1928,7 @@ __metadata:
     slugify: 1.6.0
     styled-components: 5.3.1
     styled-normalize: 8.0.7
-    type-fest: 2.2.0
+    type-fest: 2.3.4
     typescript: 4.4.3
     unified: 10.1.0
   languageName: unknown
@@ -6769,10 +6769,10 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"type-fest@npm:2.2.0":
-  version: 2.2.0
-  resolution: "type-fest@npm:2.2.0"
-  checksum: a4a14d404c5168e9aa920d3cd534b6db2035d284dea241e4f6d694c3d6c51c48e42e93a3a09d1d541bf18b7b0fb9bdff7391962e43e41902e772487378866e66
+"type-fest@npm:2.3.4":
+  version: 2.3.4
+  resolution: "type-fest@npm:2.3.4"
+  checksum: 95b5930587f52d467aacc88db0a39e947b2913d896bc382c1a43a0bba78624774c1725448ab5c0161e02ed9ac496cb351486b42a407158b40e7f3aee282d5b69
   languageName: node
   linkType: hard
 
