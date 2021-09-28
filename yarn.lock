@@ -1923,7 +1923,7 @@ __metadata:
     remark-gfm: 2.0.0
     remark-html: 14.0.1
     remark-parse: 10.0.0
-    remark-rehype: 9.0.0
+    remark-rehype: 9.1.0
     shiki: 0.9.10
     slugify: 1.6.0
     styled-components: 5.3.1
@@ -5777,15 +5777,15 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"remark-rehype@npm:9.0.0":
-  version: 9.0.0
-  resolution: "remark-rehype@npm:9.0.0"
+"remark-rehype@npm:9.1.0":
+  version: 9.1.0
+  resolution: "remark-rehype@npm:9.1.0"
   dependencies:
     "@types/hast": ^2.0.0
     "@types/mdast": ^3.0.0
     mdast-util-to-hast: ^11.0.0
     unified: ^10.0.0
-  checksum: 7b0bb7eb10689786ad967e945eafdcb7f91c00c29e76f531417cf5e75c3547a5e75cf7ce3370f71d0282f50983121af8d88e8eb43548482c76f253a45f1625f1
+  checksum: 01d8177ce1a9138ead8779ec73cfef8d06669c4ebe7c4e94e804a1ddba12dca874131330f22e3979a4e0a4132239142dc93e7cfbd5d18b9250b4cc770557aff1
   languageName: node
   linkType: hard
 
