@@ -1965,7 +1965,7 @@ __metadata:
     remark-external-links: 9.0.1
     remark-gfm: 3.0.1
     remark-html: 15.0.0
-    remark-parse: 10.0.0
+    remark-parse: 10.0.1
     remark-rehype: 10.0.1
     shiki: 0.9.12
     slugify: 1.6.2
@@ -5824,14 +5824,14 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"remark-parse@npm:10.0.0":
-  version: 10.0.0
-  resolution: "remark-parse@npm:10.0.0"
+"remark-parse@npm:10.0.1":
+  version: 10.0.1
+  resolution: "remark-parse@npm:10.0.1"
   dependencies:
     "@types/mdast": ^3.0.0
     mdast-util-from-markdown: ^1.0.0
     unified: ^10.0.0
-  checksum: cebd0d8f95b7b0b827277773ddafd05d295a450a2a712f085ccedad2572678712785869b7a0dea53c215f124c22dad5b5247c29d461729933565ed7b5f262e6d
+  checksum: 505088e564ab53ff054433368adbb7b551f69240c7d9768975529837a86f1d0f085e72d6211929c5c42db315273df4afc94f3d3a8662ffdb69468534c6643d29
   languageName: node
   linkType: hard
 
