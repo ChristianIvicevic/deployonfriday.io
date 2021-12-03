@@ -1966,7 +1966,7 @@ __metadata:
     remark-gfm: 3.0.1
     remark-html: 15.0.1
     remark-parse: 10.0.1
-    remark-rehype: 10.0.1
+    remark-rehype: 10.1.0
     shiki: 0.9.13
     slugify: 1.6.3
     styled-components: 5.3.3
@@ -4244,6 +4244,24 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"mdast-util-to-hast@npm:^12.1.0":
+  version: 12.1.0
+  resolution: "mdast-util-to-hast@npm:12.1.0"
+  dependencies:
+    "@types/hast": ^2.0.0
+    "@types/mdast": ^3.0.0
+    "@types/mdurl": ^1.0.0
+    mdast-util-definitions: ^5.0.0
+    mdurl: ^1.0.0
+    micromark-util-sanitize-uri: ^1.0.0
+    unist-builder: ^3.0.0
+    unist-util-generated: ^2.0.0
+    unist-util-position: ^4.0.0
+    unist-util-visit: ^4.0.0
+  checksum: d20202a5266ab485f04ec13b4cb55def308d96023cff417446cc43d11778092c72664cfde49fe9af14016d38dd21b765c7ca865a0cfa41b9b0ab420a05749b2a
+  languageName: node
+  linkType: hard
+
 "mdast-util-to-markdown@npm:^1.0.0":
   version: 1.2.1
   resolution: "mdast-util-to-markdown@npm:1.2.1"
@@ -5817,15 +5835,15 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"remark-rehype@npm:10.0.1":
-  version: 10.0.1
-  resolution: "remark-rehype@npm:10.0.1"
+"remark-rehype@npm:10.1.0":
+  version: 10.1.0
+  resolution: "remark-rehype@npm:10.1.0"
   dependencies:
     "@types/hast": ^2.0.0
     "@types/mdast": ^3.0.0
-    mdast-util-to-hast: ^12.0.0
+    mdast-util-to-hast: ^12.1.0
     unified: ^10.0.0
-  checksum: 8b5b78c54080ceea7a49976a0d600a538c61311302640e1ebc09c60858065d6a5743add7fe1d820efd6bb5934ff202271c30cb512ab68bf78cf13ef6927d694d
+  checksum: b9ac8acff3383b204dfdc2599d0bdf86e6ca7e837033209584af2e6aaa6a9013e519a379afa3201299798cab7298c8f4b388de118c312c67234c133318aec084
   languageName: node
   linkType: hard
 
