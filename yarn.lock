@@ -1968,7 +1968,7 @@ __metadata:
     remark-parse: 10.0.1
     remark-rehype: 10.1.0
     shiki: 0.9.13
-    slugify: 1.6.3
+    slugify: 1.6.4
     styled-components: 5.3.3
     styled-normalize: 8.0.7
     type-fest: 2.8.0
@@ -6160,10 +6160,10 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"slugify@npm:1.6.3":
-  version: 1.6.3
-  resolution: "slugify@npm:1.6.3"
-  checksum: fc3861f41c0550ad7d2c48e7e5866bd51e9634bc0495b921c4b1112f6a8b76de51cc4ebb8210636878cad750238adf641548bb9b82432e520d039004b99a1bb6
+"slugify@npm:1.6.4":
+  version: 1.6.4
+  resolution: "slugify@npm:1.6.4"
+  checksum: b72baa37e2d9a389032633f3a9c51f8727827dcd1790a3e7f75e43986b0f1da9feba8004d615543b009d096e416688328995717303f243e1536dc417ed23ccc1
   languageName: node
   linkType: hard
 
