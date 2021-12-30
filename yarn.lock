@@ -1959,7 +1959,7 @@ __metadata:
     react-dom: 17.0.2
     reading-time: 1.5.0
     rehype-autolink-headings: 6.1.1
-    rehype-slug: 5.0.0
+    rehype-slug: 5.0.1
     rehype-stringify: 9.0.2
     rehype-title-figure: 0.1.1
     remark-external-links: 9.0.1
@@ -5747,9 +5747,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"rehype-slug@npm:5.0.0":
-  version: 5.0.0
-  resolution: "rehype-slug@npm:5.0.0"
+"rehype-slug@npm:5.0.1":
+  version: 5.0.1
+  resolution: "rehype-slug@npm:5.0.1"
   dependencies:
     "@types/hast": ^2.0.0
     github-slugger: ^1.1.1
@@ -5758,7 +5758,7 @@ fsevents@~2.3.1:
     hast-util-to-string: ^2.0.0
     unified: ^10.0.0
     unist-util-visit: ^4.0.0
-  checksum: fdfb5fdb5a8c00f42c6c14e178c381cc6e52c9d099eccf83a91a9800922121d55bffc75c64deb52c97bed8fef601f68e510d64fb185021a5d82aba454bcb2e56
+  checksum: 33e6e9419fc8ac54d5bdac736fe788e3b1ae71b10a8bf1ea4be4af17c504afda9ae0438ce827a13cde0fe334725e9624d9fbde2f5d9fc061378ec5f0bb4c247d
   languageName: node
   linkType: hard
 
