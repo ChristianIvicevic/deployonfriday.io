@@ -55,7 +55,7 @@
     "remark-parse": "10.0.1",
     "remark-rehype": "10.1.0",
     "shiki": "0.9.13",
-    "slugify": "1.6.4",
+    "slugify": "1.6.5",
     "styled-components": "5.3.3",
     "styled-normalize": "8.0.7",
     "type-fest": "2.9.0",
