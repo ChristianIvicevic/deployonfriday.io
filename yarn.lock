@@ -285,17 +285,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@blueprintjs/icons@npm:3.31.0":
-  version: 3.31.0
-  resolution: "@blueprintjs/icons@npm:3.31.0"
-  dependencies:
-    classnames: ^2.2
-    tslib: ~1.13.0
-  checksum: 4ec04282140661daf293dc495b35a60ad37549371f2bd56fa18755019f09db44232a3e88bf49a579f7afd55dcba060798518c3f95555a820acbc5620ace450a5
-  languageName: node
-  linkType: hard
-
-"@blueprintjs/icons@npm:^3.32.0":
+"@blueprintjs/icons@npm:3.32.0, @blueprintjs/icons@npm:^3.32.0":
   version: 3.32.0
   resolution: "@blueprintjs/icons@npm:3.32.0"
   dependencies:
@@ -1938,7 +1928,7 @@ __metadata:
   resolution: "deployonfriday.io@workspace:."
   dependencies:
     "@blueprintjs/core": 3.53.0
-    "@blueprintjs/icons": 3.31.0
+    "@blueprintjs/icons": 3.32.0
     "@types/classnames": 2.3.0
     "@types/he": 1.1.2
     "@types/node": 14.18.10
