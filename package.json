@@ -54,7 +54,7 @@
     "remark-html": "15.0.1",
     "remark-parse": "10.0.1",
     "remark-rehype": "10.1.0",
-    "shiki": "0.10.0",
+    "shiki": "0.10.1",
     "slugify": "1.6.5",
     "styled-components": "5.3.3",
     "styled-normalize": "8.0.7",
