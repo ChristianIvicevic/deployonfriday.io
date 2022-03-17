@@ -252,19 +252,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@blueprintjs/colors@npm:^4.0.0-alpha.2":
-  version: 4.0.0-beta.3
-  resolution: "@blueprintjs/colors@npm:4.0.0-beta.3"
-  checksum: 3f6ab918422030d161246254d8db141089e3a84553024d9bd3e342e791cc4edd38bc6db648af9d94963df3750562b6fc871a0cb67cff1669473646f35c990e21
+"@blueprintjs/colors@npm:^4.0.0-alpha.3":
+  version: 4.0.0-rc.0
+  resolution: "@blueprintjs/colors@npm:4.0.0-rc.0"
+  checksum: 82a06335bdf3a04e75243dfc5850396c0a74cdedaa96122a9a89acec4fdfbc622ffd34e823464b92a001da6a66db74a6d2618b55d3a4b30eae9a429dc8ffdef7
   languageName: node
   linkType: hard
 
-"@blueprintjs/core@npm:3.53.0":
-  version: 3.53.0
-  resolution: "@blueprintjs/core@npm:3.53.0"
+"@blueprintjs/core@npm:3.54.0":
+  version: 3.54.0
+  resolution: "@blueprintjs/core@npm:3.54.0"
   dependencies:
-    "@blueprintjs/colors": ^4.0.0-alpha.2
-    "@blueprintjs/icons": ^3.32.0
+    "@blueprintjs/colors": ^4.0.0-alpha.3
+    "@blueprintjs/icons": ^3.33.0
+    "@juggle/resize-observer": ^3.3.1
     "@types/dom4": ^2.0.1
     classnames: ^2.2
     dom4: ^2.1.5
@@ -273,25 +274,34 @@ __metadata:
     react-lifecycles-compat: ^3.0.4
     react-popper: ^1.3.7
     react-transition-group: ^2.9.0
-    resize-observer-polyfill: ^1.5.1
-    tslib: ~1.13.0
+    tslib: ~2.3.1
   peerDependencies:
     react: ^15.3.0 || 16 || 17
     react-dom: ^15.3.0 || 16 || 17
   bin:
     upgrade-blueprint-2.0.0-rename: scripts/upgrade-blueprint-2.0.0-rename.sh
     upgrade-blueprint-3.0.0-rename: scripts/upgrade-blueprint-3.0.0-rename.sh
-  checksum: de7bdfacd571412ac3a965fa7b3c29f54b85c7579abc698c05e10a179a9623a2a1217a97cb19e8588e2b74f6b17a15e9c3906ed60d7abdef59090207867e1750
+  checksum: 97b8811bfc32284bb36e62a44210e84d5abe164ef553670866e0628718db4a98c79b9665f73014b1474f534a3d3260e94af274e669fb0ebfeb323305a81b5375
   languageName: node
   linkType: hard
 
-"@blueprintjs/icons@npm:3.32.0, @blueprintjs/icons@npm:^3.32.0":
+"@blueprintjs/icons@npm:3.32.0":
   version: 3.32.0
   resolution: "@blueprintjs/icons@npm:3.32.0"
   dependencies:
     classnames: ^2.2
     tslib: ~1.13.0
   checksum: 02f9e583c72869c956c5c67c93858bf5488e0c1f38790c1faf4ffc2a0f8f6d574311d62f818fbf853f234e61c3052c19378fad889c2a24cd981d88a97be34646
+  languageName: node
+  linkType: hard
+
+"@blueprintjs/icons@npm:^3.33.0":
+  version: 3.33.0
+  resolution: "@blueprintjs/icons@npm:3.33.0"
+  dependencies:
+    classnames: ^2.2
+    tslib: ~2.3.1
+  checksum: 9b1485a3ce17a97596b7fa7276ddbe85e33c56f061358351a626d353bf3eab6ab1b36a1860aec2feb7933ef0293c5f8e1f3342a89051720d1953343aab753cb3
   languageName: node
   linkType: hard
 
@@ -383,6 +393,13 @@ __metadata:
   version: 1.2.0
   resolution: "@humanwhocodes/object-schema@npm:1.2.0"
   checksum: 40b75480376de8104d65f7c44a7dd76d30fb57823ca8ba3a3239b2b568323be894d93440578a72fd8e5e2cc3df3577ce0d2f0fe308b990dd51cf35392bf3c9a2
+  languageName: node
+  linkType: hard
+
+"@juggle/resize-observer@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "@juggle/resize-observer@npm:3.3.1"
+  checksum: ddabc4044276a2cb57d469c4917206c7e39f2463aa8e3430e33e4eda554412afe29c22afa40e6708b49dad5d56768dc83acd68a704b1dcd49a0906bb96b991b2
   languageName: node
   linkType: hard
 
@@ -1928,7 +1945,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "deployonfriday.io@workspace:."
   dependencies:
-    "@blueprintjs/core": 3.53.0
+    "@blueprintjs/core": 3.54.0
     "@blueprintjs/icons": 3.32.0
     "@types/classnames": 2.3.0
     "@types/he": 1.1.2
@@ -5924,13 +5941,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"resize-observer-polyfill@npm:^1.5.1":
-  version: 1.5.1
-  resolution: "resize-observer-polyfill@npm:1.5.1"
-  checksum: 57e7f79489867b00ba43c9c051524a5c8f162a61d5547e99333549afc23e15c44fd43f2f318ea0261ea98c0eb3158cca261e6f48d66e1ed1cd1f340a43977094
-  languageName: node
-  linkType: hard
-
 "resolve-from@npm:^4.0.0":
   version: 4.0.0
   resolution: "resolve-from@npm:4.0.0"
@@ -6776,6 +6786,13 @@ resolve@^2.0.0-next.3:
   version: 1.13.0
   resolution: "tslib@npm:1.13.0"
   checksum: 50e9327361f94f328c0715582a7f725f69838ab3c2559d143643c5367262fe14552768ba8cfc65bc7dc924a619aea599b3a28b6653458cdca77bbebaf9bc8df4
+  languageName: node
+  linkType: hard
+
+"tslib@npm:~2.3.1":
+  version: 2.3.1
+  resolution: "tslib@npm:2.3.1"
+  checksum: de17a98d4614481f7fcb5cd53ffc1aaf8654313be0291e1bfaee4b4bb31a20494b7d218ff2e15017883e8ea9626599b3b0e0229c18383ba9dce89da2adf15cb9
   languageName: node
   linkType: hard
 
