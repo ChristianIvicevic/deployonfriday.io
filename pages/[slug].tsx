@@ -20,7 +20,7 @@ export default ({
   <Page title={title}>
     <Seo title={title} description={description} />
     <Layout condensed>
-      <article className="prose prose-slate max-w-none prose-a:decoration-sky-300 prose-a:decoration-2 hover:prose-a:decoration-4 prose-figure:flex prose-figure:flex-col prose-figure:justify-center lg:prose-xl">
+      <article className="prose prose-slate max-w-none prose-a:decoration-sky-300 prose-a:decoration-2 hover:prose-a:decoration-4 prose-figcaption:mx-auto prose-img:mx-auto lg:prose-xl">
         <div className="not-prose">
           <h1 className="mb-2 text-3xl font-bold text-black md:text-4xl">
             {title}

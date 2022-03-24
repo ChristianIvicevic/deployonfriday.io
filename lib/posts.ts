@@ -39,3 +39,6 @@ export const getAllPosts = async () =>
         }),
     )
   ).sort((a, b) => (new Date(b.date) <= new Date(a.date) ? -1 : 1));
+
+export const getAllPostPreviews = async () =>
+  (await getAllPosts()).map(({ htmlContent, ...rest }) => rest);

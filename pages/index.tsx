@@ -2,7 +2,7 @@ import { ArticlePreview } from 'components/article-preview';
 import { Layout } from 'components/layout';
 import { Page } from 'components/page';
 import { Seo } from 'components/seo';
-import { getAllPosts } from 'lib/posts';
+import { getAllPostPreviews } from 'lib/posts';
 import type { InferGetStaticPropsType } from 'next';
 
 // noinspection JSUnusedGlobalSymbols
@@ -28,6 +28,6 @@ export default ({
 
 export const getStaticProps = async () => ({
   props: {
-    articles: await getAllPosts(),
+    articles: await getAllPostPreviews(),
   },
 });

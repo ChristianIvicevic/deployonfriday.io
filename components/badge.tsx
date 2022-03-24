@@ -9,7 +9,7 @@ export const Badge = ({ category }: Props) => (
     className={classNames('rounded-full px-4 py-1 text-sm font-medium', {
       'bg-blue-100 text-blue-800': category === 'React',
       'bg-amber-100 text-amber-800': category === 'Javascript',
-      'bg-red-100 text-red-800': category === 'Rust',
+      'bg-orange-100 text-orange-800': category === 'Rust',
     })}
   >
     {category}
