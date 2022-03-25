@@ -56,7 +56,7 @@ Array(5);
 
 So far the result seems reasonable and we can start doing something with it.
 For instance we can attempt to return the first 5 even numbers `[0, 2, 4, 6, 8]`.
-Intuitevely one would use [`Array.map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) to create this array:
+Intuitively one would use [`Array.map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map) to create this array:
 
 ```tsx
 Array(5).map((_, index) => 2 * index);
@@ -119,7 +119,7 @@ Ultimately if you want a range of numbers from 0 to a fixed upper bound, you can
 // -> [0, 1, 2, 3, 4]
 ```
 
-Personally I like to use the last snippet for a more customizable `range` function unless the project I am currently working on already has included [`rambda`](https://ramdajs.com/) which provides its own [`range`](https://ramdajs.com/docs/#range) method out of the box.
+Personally I like to use the last snippet for a more customizable `range` function unless the project I am currently working on already has included [`ramda`](https://ramdajs.com/) which provides its own [`range`](https://ramdajs.com/docs/#range) method out of the box.
 
 ```tsx
 const range = (size: number, startAt = 0) =>

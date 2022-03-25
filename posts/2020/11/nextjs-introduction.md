@@ -112,7 +112,7 @@ This is the first time Next.js introduces us to mixing code that is only availab
 
 At the time of writing this post the index page of my blog looks as follows:
 
-```tsx{7,26-30}
+```tsx
 import { Page } from 'components/page';
 import { Post } from 'components/post';
 import { Seo } from 'components/seo';
@@ -165,7 +165,7 @@ For each of those paths a variant of the page is pre-rendered using the `getStat
 
 A shortened version of this page located under `pages/[slug].tsx` is this:
 
-```tsx{18-21,23,25}
+```tsx
 import { getAllPosts } from 'lib/posts';
 import type {
   GetStaticPaths,

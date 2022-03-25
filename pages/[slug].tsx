@@ -1,7 +1,5 @@
-import type { ArticleFooterProps } from 'components/article-footer';
-import { ArticleFooter } from 'components/article-footer';
-import { Category } from 'components/category';
-import { Details } from 'components/details';
+import { Badge } from 'components/badge';
+import { Layout } from 'components/layout';
 import { Page } from 'components/page';
 import { Seo } from 'components/seo';
 import { getAllPosts } from 'lib/posts';
@@ -10,96 +8,57 @@ import type {
   GetStaticProps,
   InferGetStaticPropsType,
 } from 'next';
-import type { FC } from 'react';
-import styled from 'styled-components';
-import type { PromiseValue } from 'type-fest';
 
-export type PostParams = {
+type Params = {
   readonly slug: string;
 };
 
-const ArticlePage: FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
-  currentPost: { title, category, date, readingTime, htmlContent, description },
-  previousLink,
-  nextLink,
-}) => (
-  <Page
-    footer={<ArticleFooter previousLink={previousLink} nextLink={nextLink} />}
-    title={title}
-  >
-    <Seo description={description} title={title} />
-    <article>
-      <header>
-        <Category category={category} />
-        <Title>{title}</Title>
-        <Details date={date} readingTime={readingTime} hasArtificialMargin />
-      </header>
-      <Content
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: htmlContent }}
-      />
-    </article>
+// noinspection JSUnusedGlobalSymbols
+export default ({
+  currentPost: { category, description, htmlContent, title, date },
+}: InferGetStaticPropsType<typeof getStaticProps>) => (
+  <Page title={title}>
+    <Seo title={title} description={description} />
+    <Layout condensed>
+      <article className="prose prose-slate max-w-none prose-a:decoration-sky-300 prose-a:decoration-2 hover:prose-a:decoration-4 prose-figure:flex prose-figure:flex-col prose-figure:justify-center lg:prose-xl">
+        <div className="not-prose">
+          <h1 className="mb-2 text-3xl font-bold text-black md:text-4xl">
+            {title}
+          </h1>
+          <div className="flex">
+            <time
+              dateTime={date}
+              className="my-auto mr-2 text-slate-500 md:text-lg"
+            >
+              {date}
+            </time>
+            <Badge category={category} />
+          </div>
+        </div>
+        {/* eslint-disable-next-line react/no-danger */}
+        <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+      </article>
+    </Layout>
   </Page>
 );
 
-export default ArticlePage;
-
-export const getStaticPaths: GetStaticPaths<PostParams> = async () => ({
+// noinspection JSUnusedGlobalSymbols
+export const getStaticPaths: GetStaticPaths<Params> = async () => ({
   paths: (await getAllPosts()).map(({ slug }) => ({ params: { slug } })),
   fallback: false,
 });
 
 export const getStaticProps: GetStaticProps<
   {
-    currentPost: PromiseValue<ReturnType<typeof getAllPosts>>[number];
-  } & ArticleFooterProps,
-  PostParams
+    currentPost: Awaited<ReturnType<typeof getAllPosts>>[number];
+  },
+  Params
 > = async ({ params }) => {
   const allPosts = await getAllPosts();
   const currentPostId = allPosts.findIndex(({ slug }) => slug === params?.slug);
-  const previousPost =
-    currentPostId !== allPosts.length ? allPosts[currentPostId + 1] : undefined;
-  const nextPost =
-    currentPostId !== 0 ? allPosts[currentPostId - 1] : undefined;
   return {
     props: {
       currentPost: allPosts[currentPostId],
-      ...(previousPost === undefined
-        ? {}
-        : {
-            previousLink: {
-              slug: previousPost.slug,
-              title: previousPost.title,
-            },
-          }),
-      ...(nextPost === undefined
-        ? {}
-        : {
-            nextLink: {
-              slug: nextPost.slug,
-              title: nextPost.title,
-            },
-          }),
     },
   };
 };
-
-const Title = styled.h1`
-  color: var(--textTitle);
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-`;
-
-const Content = styled.div`
-  margin-bottom: 4rem;
-
-  & img {
-    width: 100%;
-  }
-
-  figcaption {
-    font-size: 0.9rem;
-    opacity: 0.75;
-  }
-`;

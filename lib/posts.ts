@@ -1,12 +1,8 @@
-import {
-  POSTS_DIRECTORY_ROOT,
-  WORDS_PER_MINUTE_SPEED,
-} from 'constants/configuration';
+import { POSTS_DIRECTORY_ROOT } from 'constants/configuration';
 import { format, parseJSON } from 'date-fns';
 import fs from 'fs';
 import matter from 'gray-matter';
 import path from 'path';
-import readingTime from 'reading-time';
 import slugify from 'slugify';
 import { readdirSyncRecursive } from 'utils/file-utils';
 import { markdownToHtml } from 'utils/parsers';
@@ -38,11 +34,6 @@ export const getAllPosts = async () =>
             description,
             category,
             slug: slugify(title, { strict: true, lower: true }),
-            readingTime: Math.ceil(
-              readingTime(frontMatter.content, {
-                wordsPerMinute: WORDS_PER_MINUTE_SPEED,
-              }).minutes,
-            ),
             htmlContent: await markdownToHtml(frontMatter.content),
           };
         }),
