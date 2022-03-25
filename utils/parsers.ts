@@ -7,7 +7,7 @@ import rehypeTitleFigure from 'rehype-title-figure';
 import remarkExternalLinks from 'remark-external-links';
 import remarkGfm from 'remark-gfm';
 import remarkParse from 'remark-parse';
-import remark2rehype from 'remark-rehype';
+import remarkRehype from 'remark-rehype';
 import { getHighlighter, loadTheme } from 'shiki';
 import { unified } from 'unified';
 
@@ -18,9 +18,11 @@ export const markdownToHtml = async (markdownContent: string) => {
   const basicHtmlContent = (
     await unified()
       .use(remarkParse)
+      // Chain remark plugins here
       .use(remarkGfm)
       .use(remarkExternalLinks)
-      .use(remark2rehype)
+      .use(remarkRehype)
+      // Chain rehype plugins here
       .use(rehypeTitleFigure)
       .use(rehypeStringify)
       .use(rehypeSlug)
