@@ -3,7 +3,7 @@ import {
   useContext as useReactContext,
 } from 'react';
 
-export const createContext = <T extends unknown>() => {
+export const createContext = <T>() => {
   const Context = createReactContext<T | undefined>(undefined);
   const useContext = () => {
     const contextValue = useReactContext(Context);
