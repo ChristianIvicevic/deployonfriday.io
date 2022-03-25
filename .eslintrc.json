@@ -44,7 +44,8 @@
     "react/function-component-definition": [
       "warn",
       {
-        "namedComponents": "arrow-function"
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
       }
     ],
     "react/jsx-filename-extension": [

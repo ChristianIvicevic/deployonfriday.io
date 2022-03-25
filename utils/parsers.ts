@@ -1,6 +1,5 @@
 import { decode } from 'he';
 import parseNumericRange from 'parse-numeric-range';
-import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import rehypeStringify from 'rehype-stringify';
 import rehypeTitleFigure from 'rehype-title-figure';
@@ -26,15 +25,6 @@ export const markdownToHtml = async (markdownContent: string) => {
       .use(rehypeTitleFigure)
       .use(rehypeStringify)
       .use(rehypeSlug)
-      .use(rehypeAutolinkHeadings, {
-        content: {
-          type: 'element',
-          tagName: 'span',
-          properties: {},
-          children: [{ type: 'text', value: '#' }],
-        },
-        properties: { ariaHidden: true, class: 'anchor', tabIndex: -1 },
-      })
       .process(markdownContent)
   ).toString();
 
