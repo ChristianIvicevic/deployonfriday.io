@@ -14,7 +14,7 @@
     "lint": "eslint . --ext .ts,.tsx"
   },
   "dependencies": {
-    "@blueprintjs/core": "3.54.0",
+    "@blueprintjs/core": "4.0.1",
     "@blueprintjs/icons": "3.33.0",
     "@types/classnames": "2.3.0",
     "@types/he": "1.1.2",
