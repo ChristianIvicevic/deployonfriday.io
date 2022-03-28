@@ -59,7 +59,7 @@ In order to prevent this and other caveats found in very classic OOP languages, 
 
 The solution to the previously mentioned issue is to introduce "has-a" relationships over "is-a" relationships using the [composite pattern](https://en.wikipedia.org/wiki/Composite_pattern) for example.
 In all fairness I have to confess that this is by no means a new paradigm that Rust has established.
-It has always existed even in the era of half-century-old coding practices, especially with the notion of interfaces enabling polymorphic behavior.
+It has always existed, even in the era of half-century-old coding practices, especially with the notion of interfaces enabling polymorphic behavior.
 Before we can check what idiomatic Rust code for composition and abstraction looks like we have to go over the basic syntax of classes first.
 
 ## Let's talk Rust
@@ -94,6 +94,7 @@ impl Graph {
             edges: BTreeSet::new(),
         }
     }
+}
 ```
 
 `Graph::new()` is an *associated method* (`static` method in C# or Java) that can be invoked without an instance.
