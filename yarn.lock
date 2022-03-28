@@ -1202,7 +1202,7 @@ __metadata:
     react-dom: 17.0.2
     rehype-slug: 5.0.1
     rehype-stringify: 9.0.3
-    rehype-title-figure: 0.1.1
+    rehype-title-figure: 0.1.2
     remark-external-links: 9.0.1
     remark-gfm: 3.0.1
     remark-parse: 10.0.1
@@ -3985,13 +3985,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rehype-title-figure@npm:0.1.1":
-  version: 0.1.1
-  resolution: "rehype-title-figure@npm:0.1.1"
+"rehype-title-figure@npm:0.1.2":
+  version: 0.1.2
+  resolution: "rehype-title-figure@npm:0.1.2"
   dependencies:
     hastscript: 6.0.0
     unist-util-visit: 2.0.3
-  checksum: 48ea7813e19392993fd5fffa3a981202e3b2ddaffad2357660e1b6ee33afd1378b5f7b120cb226a1a11b1be530610b88fa3f7b9e3834435ca816ea4e479d105e
+  checksum: d461c5024728da30d122b07e538e4fb645c9ea0494f92d168c2b7f5d83fad7db949aa7995af58f7dfdde8f30638bdba3d559795b04fb8115257cd00ea9b940dd
   languageName: node
   linkType: hard
 
