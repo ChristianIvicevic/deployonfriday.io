@@ -99,7 +99,7 @@ impl Graph {
 ```
 
 `Graph::new()` is an *associated function* (`static` method in C# or Java) that can be invoked without an instance.
-In fact, Rust doesn't have classic constructors as other languages, but it is convetion to have such a `new()` function which behaves like a constructor.
+In fact, Rust doesn't have classic constructors as other languages, but it is convention to have such a `new()` function which behaves like a constructor.
 
 ```rust
 impl Graph {
