@@ -306,7 +306,7 @@ fn let_unit_speak(unit: &impl Speak) {
 
 fn main() {
     let_unit_speak(&Human); // prints "I can speak."
-    let_unit_speak(&Mime); // doesn't print anything
+    let_unit_speak(&Mime); // prints "*inaudible gestures*"
 }
 ```
 
@@ -341,7 +341,7 @@ impl From<i32> for Number {
 impl From<f32> for Number {
     fn from(value: f32) -> Self {
         Self {
-            // We must convert the f32 to an i32 by truncating it.
+            // We must convert the f32 to an i32 by rounding it.
             value: value.round() as i32,
         }
     }
@@ -363,3 +363,5 @@ fn main() {
     expects_number(3.14); // prints "Number Value: 3" using the From<f32> implementation
 }
 ```
+
+As you can see, using traits as a means of abstraction it is possible to introduce behavior for functions to handle polymorphic data.
