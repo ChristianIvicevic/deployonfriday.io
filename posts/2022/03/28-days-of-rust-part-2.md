@@ -80,7 +80,7 @@ struct Graph {
 ```
 
 Our `Graph` struct contains a single field `edges` of type `BTreeSet<(i32, i32)>` and nothing more.
-What is noticeable is that structs in Rust, unlike classes in other languages, strictly separate attributes and functions.
+What is noticeable is that structs in Rust, unlike classes in other languages, strictly separate fields and functions.
 Using _implementation_ blocks starting with `impl` we can define functions and methods for our struct.
 We can even freely group multiple functions within separate `impl` block and even have them in separate files.
 This is common within the Rust ecosystem which uses feature flags to conditionally enable code blocks.
@@ -186,7 +186,7 @@ The easiest approach to model composition is to nest structs into each other and
 
 ```rust
 struct Human {
-    // ... some attributes specific to humans
+    // ... some fields specific to humans
 }
 
 impl Human {
@@ -196,7 +196,7 @@ impl Human {
 }
 
 struct Orc {
-    // ... some attributes specific to orcs
+    // ... some fields specific to orcs
 }
 
 impl Orc {
@@ -210,7 +210,7 @@ struct HalfOrc {
     human: Human,
     // Nest an instance of Orc into this struct
     orc: Orc,
-    // ... some attributes specific to half orcs
+    // ... some fields specific to half orcs
 }
 
 impl HalfOrc {
