@@ -34,7 +34,7 @@ class Orc extends Unit {
     }
 }
 
-// Technically not possible in Java since there is no multiple inheritance.
+// Not possible in Java since there is no multiple inheritance.
 class HalfOrc extends Human, Orc {}
 
 class Application {
@@ -65,8 +65,9 @@ Before we can check what idiomatic Rust code for composition and abstraction loo
 ## Let's talk Rust
 
 First let us start with the concept of `struct`s within Rust and their declaration.
-Unlike in other languages custom data types that are comprised of multiple values, functions and methods are called structs instead of classes.
-In addition to that their definition only includes attributes and nothing else.
+In other object-oriented languages custom data types are often named `class` and are usually comprised of multiple fields, functions and methods.
+Rust on the other hand allows field definitions and function / method definitions to be separated.
+The former are defined using the `struct` keyword while the latter are placed inside an `impl`ementation block.
 
 ```rust
 /// Lightweight undirected graph defined by a set of edges rather than nodes
@@ -78,9 +79,9 @@ struct Graph {
 }
 ```
 
-Our `Graph` struct contains a single attribute `edges` of type `BTreeSet<(i32, i32)>` and nothing more.
+Our `Graph` struct contains a single field `edges` of type `BTreeSet<(i32, i32)>` and nothing more.
 What is noticeable is that structs in Rust, unlike classes in other languages, strictly separate attributes and functions.
-Using _implementation_ blocks starting with `impl` we can define functions for our struct.
+Using _implementation_ blocks starting with `impl` we can define functions and methods for our struct.
 We can even freely group multiple functions within separate `impl` block and even have them in separate files.
 This is common within the Rust ecosystem which uses feature flags to conditionally enable code blocks.
 
@@ -97,8 +98,8 @@ impl Graph {
 }
 ```
 
-`Graph::new()` is an *associated method* (`static` method in C# or Java) that can be invoked without an instance.
-In fact, Rust doesn't have classic constructors as other languages, but it is very common to have such a `new()` method which behaves like a constructor.
+`Graph::new()` is an *associated function* (`static` method in C# or Java) that can be invoked without an instance.
+In fact, Rust doesn't have classic constructors as other languages, but it is convetion to have such a `new()` function which behaves like a constructor.
 
 ```rust
 impl Graph {
@@ -111,7 +112,7 @@ impl Graph {
 ```
 
 `Graph::contains_edge()` is an actual *(instance) method* indicated by the first parameter, namely `&self` (similar to Python or `this` in C# and Java).
-An associated method like the previously shown `Graph::new()` had no such parameter.
+An associated function like the previously shown `Graph::new()` has no such parameter.
 
 The syntax `&self` is syntactic sugar for `self: &Self` which is a reference to the underlying instance.
 In order to invoke that method it has be called using an existing instance as follows:
@@ -134,7 +135,8 @@ impl Graph {
 ```
 
 Compared to `Graph::contains_edge()` the new method `Graph::add_edge()` operates on a mutable reference of `self` indicated by the `&mut self` as the first parameter.
-Although it also has to be called using an existing instance, it cannot be called on an instance that is not marked with `mut` itself!
+The distinction between `&self` and `&mut self` really helps to not only document that (im)mutable nature of a method, it is also enforced by the compiler.
+Here is a snippet that intentionally attempts to invoke `Graph::add_edge()` on an instance that is immutable:
 
 ```rust
 // The instance of Graph is NOT marked as mut.
@@ -142,7 +144,7 @@ let graph = Graph::new();
 graph.add_edge(1, 2);
 ```
 
-This snippet won't compile and the error thrown is the following:
+This snippet won't compile and the compiler will error with the following message:
 
 ```text
 error[E0596]: cannot borrow `graph` as mutable, as it is not declared as mutable
@@ -154,7 +156,6 @@ error[E0596]: cannot borrow `graph` as mutable, as it is not declared as mutable
    |     ^^^^^^^^^^^^^^^^^^^^ cannot borrow as mutable
 ```
 
-Similar to _const-correctness_ in C++ the distinction between `&self` and `&mut self` really helps to not only document that (im)mutable nature of a method, it is also enforced by the compiler.
 Additionally a method that mutates `self` but isn't marked as such would also cause a compilation error:
 
 ```rust
@@ -200,7 +201,7 @@ struct Orc {
 
 impl Orc {
     fn speak(&self) {
-        println!("I'm an Orc.");
+        println!("I'm an orc.");
     }
 }
 
@@ -232,7 +233,7 @@ The syntax is fairly self-explanatory:
 
 ```rust
 /// A trait that exposes a method to speak depending on how this trait is implemented.
-trait CanSpeak {
+trait Speak {
     fn speak(&self);
 }
 
@@ -241,26 +242,26 @@ struct Human;
 struct Orc;
 struct HalfOrc;
 
-impl CanSpeak for Human {
+impl Speak for Human {
     fn speak(&self) {
         println!("I'm a human.");
     }
 }
 
-impl CanSpeak for Orc {
+impl Speak for Orc {
     fn speak(&self) {
         println!("I'm an orc.");
     }
 }
 
-impl CanSpeak for HalfOrc {
+impl Speak for HalfOrc {
     fn speak(&self) {
         println!("I'm half human and half orc.");
     }
 }
 
-/// Free function that takes a reference to any object that implements CanSpeak.
-fn let_unit_speak(unit: &impl CanSpeak) {
+/// Free function that takes a reference to any object that implements Speak.
+fn let_unit_speak(unit: &impl Speak) {
     unit.speak();
 }
 
@@ -272,13 +273,13 @@ fn main() {
 ```
 
 As you can see, every custom struct can freely implement a trait and provide their custom implementation details.
-A function such as `let_unit_speak` does not care about the actual type of the supplied object, it only expects something that implements `CanSpeak`.
+A function such as `let_unit_speak` does not care about the actual type of the supplied object, it only expects something that implements `Speak`.
 
 In order to have some default behavior between types that implement a trait Rust allows for default implementations of methods within traits which can easily be overridden.
 
 ```rust
 /// A trait that exposes a method to speak depending on how this trait is implemented.
-trait CanSpeak {
+trait Speak {
     fn speak(&self) {
         println!("I can speak.");
     }
@@ -289,16 +290,17 @@ struct Human;
 struct Mime;
 
 // Use the default implementation for Human.
-impl CanSpeak for Human {}
+impl Speak for Human {}
 
-impl CanSpeak for Mime {
+impl Speak for Mime {
     fn speak(&self) {
-        // A good mime does not speak!
+        // A good mime does not speak with actual words!
+        println!("*inaudible gestures*");
     }
 }
 
-/// Free function that takes a reference to any object that implements CanSpeak.
-fn let_unit_speak(unit: &impl CanSpeak) {
+/// Free function that takes a reference to any object that implements Speak.
+fn let_unit_speak(unit: &impl Speak) {
     unit.speak();
 }
 
@@ -340,7 +342,7 @@ impl From<f32> for Number {
     fn from(value: f32) -> Self {
         Self {
             // We must convert the f32 to an i32 by truncating it.
-            value: value as i32,
+            value: value.round() as i32,
         }
     }
 }
