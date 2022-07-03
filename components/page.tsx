@@ -1,12 +1,13 @@
 import { SiteMetadata } from 'constants/site-metadata';
 import Head from 'next/head';
-import type { FC } from 'react';
+import type { ReactNode } from 'react';
 
 type Props = {
   readonly title?: string;
+  readonly children: ReactNode;
 };
 
-export const Page: FC<Props> = ({ children, title }) => (
+export const Page = ({ children, title }: Props) => (
   <>
     <Head>
       <meta

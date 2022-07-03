@@ -1,12 +1,13 @@
 import { Footer } from 'components/footer';
 import { Header } from 'components/header';
-import type { FC } from 'react';
+import type { ReactNode } from 'react';
 
 type Props = {
   readonly condensed?: boolean;
+  readonly children: ReactNode;
 };
 
-export const Layout: FC<Props> = ({ children, condensed = false }) => (
+export const Layout = ({ children, condensed = false }: Props) => (
   <div className="container mx-auto px-8">
     <div className="mb-10">
       <Header condensed={condensed} />
