@@ -6,7 +6,8 @@
     ":label(renovate)",
     ":rebaseStalePrs",
     ":automergeBranch",
-    ":disableDependencyDashboard"
+    ":disableDependencyDashboard",
+    "schedule:daily"
   ],
   "packageRules": [
     {
