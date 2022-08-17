@@ -22,7 +22,7 @@
     "@types/react": "18.0.17",
     "@typescript-eslint/eslint-plugin": "5.33.1",
     "@typescript-eslint/parser": "5.33.1",
-    "autoprefixer": "10.4.7",
+    "autoprefixer": "10.4.8",
     "classnames": "2.3.1",
     "date-fns": "2.29.1",
     "eslint": "8.22.0",
