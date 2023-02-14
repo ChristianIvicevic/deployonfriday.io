@@ -278,10 +278,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/he@npm:1.1.2":
-  version: 1.1.2
-  resolution: "@types/he@npm:1.1.2"
-  checksum: 71e9786c35330a2003a7692d5dc4f70946e4c45486f84d7a5792360c6c234cd34bf53421856de40a2c4bead9c21a805c309d72d012467f46bb2cce0571a9ba08
+"@types/he@npm:1.2.0":
+  version: 1.2.0
+  resolution: "@types/he@npm:1.2.0"
+  checksum: 0110608efe61a8fb710c5a344485d70dab48116e9529d10a3175985ad7a118a2547ffd708349681f3ecdbcd6ae91e63c674b73ed0e4bd2c9a57ca793f538c852
   languageName: node
   linkType: hard
 
@@ -1208,7 +1208,7 @@ __metadata:
   dependencies:
     "@tailwindcss/typography": 0.5.4
     "@types/classnames": 2.3.0
-    "@types/he": 1.1.2
+    "@types/he": 1.2.0
     "@types/node": 16.11.59
     "@types/parse-numeric-range": 0.0.1
     "@types/react": 18.0.28
