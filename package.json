@@ -19,7 +19,7 @@
     "@types/he": "1.2.0",
     "@types/node": "16.11.59",
     "@types/parse-numeric-range": "0.0.1",
-    "@types/react": "18.0.28",
+    "@types/react": "18.0.29",
     "@typescript-eslint/eslint-plugin": "5.56.0",
     "@typescript-eslint/parser": "5.56.0",
     "autoprefixer": "10.4.8",
