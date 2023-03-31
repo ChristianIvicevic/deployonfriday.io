@@ -23,7 +23,7 @@
     "@typescript-eslint/eslint-plugin": "5.57.0",
     "@typescript-eslint/parser": "5.57.0",
     "autoprefixer": "10.4.8",
-    "classnames": "2.3.1",
+    "classnames": "2.3.2",
     "date-fns": "2.29.1",
     "eslint": "8.36.0",
     "eslint-config-airbnb": "19.0.4",
